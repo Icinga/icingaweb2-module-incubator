@@ -1,0 +1,5 @@
+Name: Incubator
+Version: v0.1.0
+Description: Incubator provides bleeding-edge libraries
+ This repository ships libraries useful for Icinga Web 2 modules. Please download
+ the latest release and install it like any other module.
