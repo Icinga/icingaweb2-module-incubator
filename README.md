@@ -4,7 +4,8 @@ Icinga Web 2 - Incubator
 This repository ships bleeding edge libraries useful for Icinga Web 2 modules.
 Please download the latest release and install it like any other module.
 
-> **HINT**: Do NOT install the GIT master, it will not work!
+> **HINT**: Do NOT install the GIT master, it will not work! Checking out a
+> branch like `stable/0.1.0` or a tag like `v0.1.0` is fine.
 
 ```sh
 RELEASES="https://github.com/Icinga/icingaweb2-module-incubator/archive" \
@@ -13,7 +14,7 @@ RELEASES="https://github.com/Icinga/icingaweb2-module-incubator/archive" \
 && mkdir "$MODULES_PATH" \
 && wget -q $RELEASES/v${MODULE_VERSION}.tar.gz -O - \
    | tar xfz - -C "$MODULES_PATH" --strip-components 1
-icingacli module enable gipfl
+icingacli module enable incubator
 ```
 
 Developer Documentation
