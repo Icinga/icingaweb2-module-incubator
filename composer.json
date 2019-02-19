@@ -1,8 +1,8 @@
 {
-    "name": "icinga/reactbundle",
+    "name": "icinga/incubator",
     "type": "library",
-    "description": "Icinga Web 2 - ReactPHP-based 3rd party libraries",
-    "homepage": "https://github.com/Icinga/icingaweb2-module-reactbundle",
+    "description": "Icinga Web 2 - Incubator for bleeding edge libraries",
+    "homepage": "https://github.com/Icinga/icingaweb2-module-incubator",
     "license": "MIT",
     "authors": [{
         "name": "Thomas Gelf",
@@ -11,40 +11,14 @@
     "config": {
         "sort-packages": true
     },
-    "repositories": [{
-        "type": "vcs",
-        "url": "https://github.com/gipfl/calendar",
-        "no-api":true
-    }, {
-        "type": "vcs",
-        "url": "https://github.com/gipfl/protocol",
-        "no-api":true
-    }, {
-        "type": "vcs",
-        "url": "https://github.com/gipfl/protocol-jsonrpc",
-        "no-api":true
-    }, {
-        "type": "vcs",
-        "url": "https://github.com/gipfl/protocol-netstring",
-        "no-api":true
-    }, {
-        "type": "vcs",
-        "url": "https://github.com/gipfl/systemd",
-        "no-api":true
-    }, {
-        "type": "vcs",
-        "url": "https://github.com/gipfl/translation",
-        "no-api":true
-    }],
     "require": {
         "php": ">=5.4.0",
         "ext-ctype": "*",
-        "gipfl/calendar": "dev-master",
-        "gipfl/protocol": "dev-master",
-        "gipfl/protocol-jsonrpc": "dev-master",
-        "gipfl/protocol-netstring": "dev-master",
-        "gipfl/systemd": "dev-master",
-        "gipfl/translation": "dev-master"
+        "gipfl/calendar": "^0.1.0",
+        "gipfl/protocol-jsonrpc": "^0.1.0",
+        "gipfl/protocol-netstring": "^0.1.0",
+        "gipfl/systemd": "^0.1.0",
+        "gipfl/translation": "^0.1.0"
     },
     "require-dev": {
     }
