@@ -2,7 +2,7 @@
 
 VERSION="$1"
 
-if [ -z $VERSION ]; then
+if [[ -z $VERSION ]]; then
   echo "USAGE: $0 <version>"
   echo " e.g.: $0 0.1.0"
   exit 1
@@ -10,7 +10,7 @@ fi
 
 TAG=$(git tag | grep -c "$VERSION")
 
-if [ "$TAG" -ne "0" ]; then
+if [[ "$TAG" -ne "0" ]]; then
   echo -n "Version $VERSION has already been tagged: "
   git tag | grep "$VERSION"
   exit 1
@@ -27,8 +27,10 @@ find vendor/ -type f -name "*.php" \
  | grep -v '/example/' \
  | grep -v '/tests/' \
  | grep -v '/test/' \
- | xargs -l git add -f
-find vendor/ -type f -name LICENSE | xargs -l git add -f
+ | xargs git add -f
+find vendor/ -type f -name LICENSE | xargs git add -f
+sed -i "s/^Version:.*/Version: v$VERSION/" module.info
+git add module.info
 git commit -m "Version v$VERSION"
 
 rm -f composer.lock

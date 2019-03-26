@@ -17,11 +17,14 @@
     "require": {
         "php": ">=5.6.3",
         "ext-ctype": "*",
-        "gipfl/calendar": "^0.1.0",
-        "gipfl/protocol-jsonrpc": "^0.1.0",
-        "gipfl/protocol-netstring": "^0.1.0",
-        "gipfl/systemd": "^0.1.0",
-        "gipfl/translation": "^0.1.0"
+        "gipfl/calendar": "^0.1",
+        "gipfl/cli": "^0.1",
+        "gipfl/icingaweb2": "^0.1.0",
+        "gipfl/linux-health": "^0.1",
+        "gipfl/protocol-jsonrpc": "^0.1",
+        "gipfl/protocol-netstring": "^0.1",
+        "gipfl/systemd": "^0.1",
+        "gipfl/translation": "^0.1"
     },
     "require-dev": {
     }
