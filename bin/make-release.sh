@@ -21,7 +21,7 @@ git checkout -b "$BRANCH"
 git rm -rf vendor
 rm -rf vendor
 rm composer.lock
-composer install
+composer install --optimize-autoloader
 find vendor/ -type f -name "*.php" \
  | grep -v '/examples/' \
  | grep -v '/example/' \
