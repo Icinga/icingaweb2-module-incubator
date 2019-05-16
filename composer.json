@@ -20,12 +20,13 @@
         "gipfl/calendar": "^0.1",
         "gipfl/cli": "^0.1",
         "gipfl/icingaweb2": "^0.1.0",
+        "gipfl/icinga-bundles": "^0.1",
+        "gipfl/icinga-cli-daemon": "^0.1",
         "gipfl/linux-health": "^0.1",
         "gipfl/protocol-jsonrpc": "^0.1",
         "gipfl/protocol-netstring": "^0.1",
         "gipfl/systemd": "^0.1",
         "gipfl/translation": "^0.1"
     },
-    "require-dev": {
-    }
+    "require-dev": {}
 }
