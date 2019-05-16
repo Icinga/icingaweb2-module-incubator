@@ -1,0 +1,27 @@
+{
+    "name": "gipfl/protocol-jsonrpc",
+    "description": "JsonRPC Connection implementation",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Gelf",
+            "email": "thomas@gelf.net"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "gipfl\\Protocol\\JsonRpc\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.6.0",
+        "ext-json": "*",
+        "gipfl/protocol": "^0.1.0",
+        "react/promise": "^2.7",
+        "react/stream": "^1.0"
+    }
+}

@@ -1,5 +1,5 @@
 Name: Incubator
-Version: master
+Version: v0.3.0
 Depends: ipl>=0.3.0, reactbundle>=0.6.0
 Description: Incubator provides bleeding-edge libraries
  This repository ships libraries useful for Icinga Web 2 modules. Please download

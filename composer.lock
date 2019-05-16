@@ -1,0 +1,452 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "87e2ade72f27d120763d62e7a3140a0c",
+    "packages": [
+        {
+            "name": "gipfl/calendar",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/calendar.git",
+                "reference": "c7838b7fad3d1475a27d2fb889770102ae71ce8e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/calendar/zipball/c7838b7fad3d1475a27d2fb889770102ae71ce8e",
+                "reference": "c7838b7fad3d1475a27d2fb889770102ae71ce8e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\Calendar\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Calendar Utils",
+            "homepage": "https://github.com/gipfl/calendar",
+            "keywords": [
+                "calendar"
+            ],
+            "time": "2019-03-26T05:43:27+00:00"
+        },
+        {
+            "name": "gipfl/cli",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/cli.git",
+                "reference": "237a61f140b294d21ae12308fb267ac35d6f7eef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/cli/zipball/237a61f140b294d21ae12308fb267ac35d6f7eef",
+                "reference": "237a61f140b294d21ae12308fb267ac35d6f7eef",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\Cli\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "CLI utilities",
+            "time": "2019-02-22T08:37:57+00:00"
+        },
+        {
+            "name": "gipfl/icinga-bundles",
+            "version": "v0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/icinga-bundles.git",
+                "reference": "fbf158d28090a14a2574a297fb356af9347710eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/icinga-bundles/zipball/fbf158d28090a14a2574a297fb356af9347710eb",
+                "reference": "fbf158d28090a14a2574a297fb356af9347710eb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*"
+            },
+            "replace": {
+                "clue/block-react": "v1.3.1",
+                "clue/buzz-react": "v2.6.0",
+                "clue/connection-manager-extra": "v1.1.0",
+                "clue/http-proxy-react": "v1.4.0",
+                "clue/mq-react": "v1.1.0",
+                "clue/redis-protocol": "v0.3.1",
+                "clue/redis-react": "v2.3.0",
+                "clue/soap-react": "v1.0.0",
+                "clue/socket-raw": "v1.4.0",
+                "clue/socks-react": "v1.0.0",
+                "evenement/evenement": "v2.1.0",
+                "guzzlehttp/psr7": "1.5.2",
+                "ipl/html": "v0.2.1",
+                "ipl/sql": "dev-master",
+                "ipl/stdlib": "v0.2.0",
+                "paragonie/random_compat": "v2.0.18",
+                "predis/predis": "v1.1.1",
+                "psr/http-message": "1.0.1",
+                "ralouphie/getallheaders": "2.0.5",
+                "ramsey/uuid": "3.8.0",
+                "react/cache": "v0.5.0",
+                "react/child-process": "v0.6.1",
+                "react/datagram": "v1.4.0",
+                "react/dns": "v0.4.17",
+                "react/event-loop": "v1.1.0",
+                "react/http": "v0.8.4",
+                "react/http-client": "v0.5.9",
+                "react/promise": "v2.7.1",
+                "react/promise-stream": "v1.1.1",
+                "react/promise-timer": "v1.5.1",
+                "react/socket": "v1.2.0",
+                "react/stream": "v1.1.0",
+                "ringcentral/psr7": "1.2.2",
+                "symfony/polyfill-ctype": "v1.11.0"
+            },
+            "type": "metapackage",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Provides (replaces) all packages provided by ipl and reactbundle",
+            "time": "2019-05-16T15:58:43+00:00"
+        },
+        {
+            "name": "gipfl/icinga-cli-daemon",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/icinga-cli-daemon.git",
+                "reference": "6b21ee78cf2d4129e5634f365165ededdeb0e229"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/icinga-cli-daemon/zipball/6b21ee78cf2d4129e5634f365165ededdeb0e229",
+                "reference": "6b21ee78cf2d4129e5634f365165ededdeb0e229",
+                "shasum": ""
+            },
+            "require": {
+                "ext-posix": "*",
+                "php": ">=5.6.3",
+                "react/event-loop": "^1.1",
+                "react/promise": "^2.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\IcingaCliDaemon\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Helpers for Icinga CLI Daemons",
+            "homepage": "https://github.com/gipfl/icinga-cli-daemon",
+            "time": "2019-05-13T10:16:33+00:00"
+        },
+        {
+            "name": "gipfl/icingaweb2",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/icingaweb2.git",
+                "reference": "a4092b7434364aab5c4ffdcea43dad78c500646d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/icingaweb2/zipball/a4092b7434364aab5c4ffdcea43dad78c500646d",
+                "reference": "a4092b7434364aab5c4ffdcea43dad78c500646d",
+                "shasum": ""
+            },
+            "require": {
+                "gipfl/translation": ">=0.1",
+                "ipl/html": ">=0.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\IcingaWeb2\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Helpers and glue for Icinga Web 2",
+            "homepage": "https://github.com/gipfl/icingaweb2",
+            "time": "2019-05-16T16:11:05+00:00"
+        },
+        {
+            "name": "gipfl/linux-health",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/linux-health.git",
+                "reference": "7b944b9609bf71e85b637065286c4fdbd797a584"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/linux-health/zipball/7b944b9609bf71e85b637065286c4fdbd797a584",
+                "reference": "7b944b9609bf71e85b637065286c4fdbd797a584",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\LinuxHealth\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Various little Linux Health based classes",
+            "time": "2019-02-20T18:43:43+00:00"
+        },
+        {
+            "name": "gipfl/protocol",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/protocol.git",
+                "reference": "02dda0008897d18e429497fd4b7dcaeaf49b2990"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/protocol/zipball/02dda0008897d18e429497fd4b7dcaeaf49b2990",
+                "reference": "02dda0008897d18e429497fd4b7dcaeaf49b2990",
+                "shasum": ""
+            },
+            "require": {
+                "evenement/evenement": "^2",
+                "php": ">=5.4.0",
+                "react/stream": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\Protocol\\Exception\\": "src/Exception",
+                    "gipfl\\Protocol\\Generic\\": "src/Generic"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Base library for some network protocol implementations",
+            "time": "2018-11-04T17:44:50+00:00"
+        },
+        {
+            "name": "gipfl/protocol-jsonrpc",
+            "version": "v0.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/protocol-jsonrpc.git",
+                "reference": "7eda39382ce4dce64b98a45e7ee693bec33b1fc5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/protocol-jsonrpc/zipball/7eda39382ce4dce64b98a45e7ee693bec33b1fc5",
+                "reference": "7eda39382ce4dce64b98a45e7ee693bec33b1fc5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "gipfl/protocol": "^0.1.0",
+                "php": ">=5.6.0",
+                "react/promise": "^2.7",
+                "react/stream": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\Protocol\\JsonRpc\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "JsonRPC Connection implementation",
+            "time": "2019-02-22T00:13:31+00:00"
+        },
+        {
+            "name": "gipfl/protocol-netstring",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/protocol-netstring.git",
+                "reference": "77136f0f25c5e42467c8dae1a928d6cbb5d6895f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/protocol-netstring/zipball/77136f0f25c5e42467c8dae1a928d6cbb5d6895f",
+                "reference": "77136f0f25c5e42467c8dae1a928d6cbb5d6895f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "gipfl/protocol": "^0.1.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\Protocol\\NetString\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Simple NetString stream wrapper",
+            "time": "2019-02-19T08:34:54+00:00"
+        },
+        {
+            "name": "gipfl/systemd",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/systemd.git",
+                "reference": "b07e46c505e26b0657279f266ef41da71f22fa30"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/systemd/zipball/b07e46c505e26b0657279f266ef41da71f22fa30",
+                "reference": "b07e46c505e26b0657279f266ef41da71f22fa30",
+                "shasum": ""
+            },
+            "require": {
+                "ext-posix": "*",
+                "ext-sockets": "*",
+                "php": ">=5.4.0",
+                "react/event-loop": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\SystemD\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "SystemD-related library",
+            "time": "2018-11-06T00:07:57+00:00"
+        },
+        {
+            "name": "gipfl/translation",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/translation.git",
+                "reference": "8cd91aa14b0a7ea5f23030b3410333af3010446b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/translation/zipball/8cd91aa14b0a7ea5f23030b3410333af3010446b",
+                "reference": "8cd91aa14b0a7ea5f23030b3410333af3010446b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\Translation\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Translation helpers",
+            "time": "2018-11-04T20:03:38+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.6.3",
+        "ext-ctype": "*"
+    },
+    "platform-dev": [],
+    "platform-overrides": {
+        "php": "5.6.3"
+    }
+}

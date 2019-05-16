@@ -1,0 +1,23 @@
+{
+    "name": "gipfl/cli",
+    "description": "CLI utilities",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Gelf",
+            "email": "thomas@gelf.net"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "gipfl\\Cli\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.6.0"
+    }
+}
