@@ -25,7 +25,7 @@
         "gipfl/linux-health": "^0.1",
         "gipfl/protocol-jsonrpc": "^0.1",
         "gipfl/protocol-netstring": "^0.1",
-        "gipfl/systemd": "^0.1",
+        "gipfl/systemd": "^0.2",
         "gipfl/translation": "^0.1"
     },
     "require-dev": {}
