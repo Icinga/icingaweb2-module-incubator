@@ -1,0 +1,23 @@
+{
+  "name": "gipfl/icinga-cli-daemon",
+  "type": "library",
+  "description": "Helpers for Icinga CLI Daemons",
+  "homepage": "https://github.com/gipfl/icinga-cli-daemon",
+  "config": {
+    "sort-packages": true,
+    "platform": {
+      "php": "5.6.3"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "gipfl\\IcingaCliDaemon\\": "src/"
+    }
+  },
+  "require": {
+     "php": ">=5.6.3",
+     "ext-posix": "*",
+     "react/promise": "^2.7",
+     "react/event-loop": "^1.1"
+  }
+}
