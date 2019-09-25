@@ -21,7 +21,7 @@
         "gipfl/cli": ">=0.2",
         "gipfl/icingaweb2": ">=0.1",
         "gipfl/icinga-bundles": ">=0.4",
-        "gipfl/icinga-cli-daemon": ">=0.2",
+        "gipfl/icinga-cli-daemon": ">=0.3",
         "gipfl/linux-health": ">=0.1",
         "gipfl/protocol-jsonrpc": ">=0.1",
         "gipfl/protocol-netstring": ">=0.1",
