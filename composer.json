@@ -26,7 +26,8 @@
         "gipfl/protocol-jsonrpc": "^0.1",
         "gipfl/protocol-netstring": "^0.1",
         "gipfl/systemd": "^0.1",
-        "gipfl/translation": "^0.1"
+        "gipfl/translation": "^0.1",
+        "ipl/incubator": "dev-master"
     },
     "require-dev": {}
 }
