@@ -29,5 +29,13 @@
         "gipfl/translation": "^0.1",
         "ipl/incubator": "dev-master"
     },
-    "require-dev": {}
+    "require-dev": {},
+    "autoload": {
+        "psr-0": { "AssetLoader": "" }
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "AssetLoader::update"
+        ]
+    }
 }
