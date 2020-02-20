@@ -12,7 +12,7 @@ Sample Tarball installation
 
 ```sh
 MODULE_NAME=incubator
-MODULE_VERSION=v0.3.0
+MODULE_VERSION=v0.5.0
 MODULES_PATH="/usr/share/icingaweb2/modules"
 MODULE_PATH="${MODULES_PATH}/${MODULE_NAME}"
 RELEASES="https://github.com/Icinga/icingaweb2-module-${MODULE_NAME}/archive"
@@ -27,7 +27,7 @@ Sample GIT installation
 
 ```sh
 MODULE_NAME=incubator
-MODULE_VERSION=v0.3.0
+MODULE_VERSION=stable/0.5.0
 REPO="https://github.com/Icinga/icingaweb2-module-${MODULE_NAME}"
 MODULES_PATH="/usr/share/icingaweb2/modules"
 git clone ${REPO} "${MODULES_PATH}/${MODULE_NAME}" --branch "${MODULE_VERSION}"
