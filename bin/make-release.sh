@@ -28,14 +28,13 @@ git rm -rf vendor
 rm -rf vendor
 rm -f composer.lock
 composer install || fail "composer install failed"
-find vendor/ -type f -name "*.php" \
+find vendor/ -type f -name "*.php" -or -name "*.js" -or -name "*.css" -or -name "*.json" \
  | grep -v '/examples/' \
  | grep -v '/example/' \
  | grep -v '/tests/' \
  | grep -v '/test/' \
  | xargs -L1 git add -f
 find vendor/ -type f -name LICENSE | xargs -L1 git add -f
-find vendor/ -type f -name '*.json' | xargs -L1 git add -f
 sed -i.bak "s/^Version:.*/Version: $VERSION/" module.info && rm -f module.info.bak
 git add module.info
 git add composer.lock -f
