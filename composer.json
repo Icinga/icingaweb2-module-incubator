@@ -19,7 +19,7 @@
         "ext-ctype": "*",
         "gipfl/calendar": ">=0.1",
         "gipfl/cli": ">=0.3",
-        "gipfl/icingaweb2": ">=0.1",
+        "gipfl/icingaweb2": ">=0.2",
         "gipfl/icinga-bundles": ">=0.5",
         "gipfl/icinga-cli-daemon": ">=0.3",
         "gipfl/linux-health": ">=0.2",
