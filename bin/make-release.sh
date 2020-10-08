@@ -35,6 +35,7 @@ find vendor/ -type f -name "*.php" -or -name "*.js" -or -name "*.css" -or -name 
  | grep -v '/test/' \
  | xargs -L1 git add -f
 find vendor/ -type f -name LICENSE | xargs -L1 git add -f
+find public/ -type f | xargs -L1 git add -f
 sed -i.bak "s/^Version:.*/Version: $VERSION/" module.info && rm -f module.info.bak
 git add module.info
 git add composer.lock -f
