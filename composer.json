@@ -30,5 +30,10 @@
         "gipfl/translation": ">=0.1",
         "gipfl/web": ">=0.1"
     },
-    "require-dev": {}
+    "require-dev": {},
+    "scripts": {
+        "post-update-cmd": [
+            "bin/refresh-public.sh"
+        ]
+    }
 }
