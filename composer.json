@@ -18,7 +18,7 @@
         "php": ">=5.6.3",
         "ext-ctype": "*",
         "gipfl/calendar": ">=0.1",
-        "gipfl/cli": ">=0.3",
+        "gipfl/cli": ">=0.4",
         "gipfl/icingaweb2": ">=0.2",
         "gipfl/icinga-bundles": ">=0.7",
         "gipfl/icinga-cli-daemon": ">=0.3",
