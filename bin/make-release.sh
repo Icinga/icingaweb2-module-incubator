@@ -14,7 +14,7 @@ function fail {
   exit 1
 }
 
-TAG=$(git tag | grep -c "$VERSION")
+TAG=$(git tag | grep -c "$VERSION$")
 
 if [[ "$TAG" -ne "0" ]]; then
   echo -n "Version $VERSION has already been tagged: "
