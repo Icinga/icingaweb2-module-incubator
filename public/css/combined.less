@@ -1,1 +1,954 @@
-/* this is where we place our combined LESS files from every libs public/css */
+@color-diff-ins: #bfb;
+@color-diff-del: #faa;
+@color-diff-changed-old: #fdd;
+@color-diff-changed-new: #efe;
+
+.Differences {
+  width: 100%;
+  table-layout: fixed;
+  empty-cells: show;
+}
+
+.Differences thead {
+  display: none;
+}
+
+.Differences thead th {
+  text-align: left;
+  padding-left: 4 / 14 * 16em;
+}
+
+.Differences tbody th {
+  text-align: right;
+  width: 4em;
+  padding: 1px 2px;
+  border-right: 1px solid @gray-light;
+  background: @gray-lightest;
+  font-weight: normal;
+  vertical-align: top;
+}
+
+.Differences tbody td {
+  width: 50%;
+  .preformatted();
+  word-break: break-all;
+}
+
+.DifferencesSideBySide {
+  ins, del {
+    text-decoration: none;
+  }
+
+  .ChangeInsert {
+    td.Left {
+      background: @gray-lighter;
+    }
+    td.Right {
+      background: @color-diff-ins;
+    }
+  }
+
+  .ChangeDelete {
+    td.Left {
+      background: @color-diff-del;
+    }
+    td.Right {
+      background: @gray-lighter;
+    }
+  }
+
+  .ChangeReplace {
+    td.Left {
+      background: @color-diff-changed-old;
+      del {
+        background: @color-diff-del;
+      }
+    }
+
+    td.Right {
+      background: @color-diff-changed-new;
+      ins {
+        background: @color-diff-ins;
+      }
+    }
+
+  }
+}
+
+.Differences .Skipped {
+  background: @gray-lightest;
+}
+
+.DifferencesInline .ChangeReplace .Left,
+.DifferencesInline .ChangeDelete .Left {
+  background: #fdd;
+}
+
+.DifferencesInline .ChangeReplace .Right,
+.DifferencesInline .ChangeInsert .Right {
+  background: #dfd;
+}
+
+.DifferencesInline .ChangeReplace ins {
+  background: #9e9;
+}
+
+.DifferencesInline .ChangeReplace del {
+  background: #e99;
+}
+
+.DifferencesInline {
+  tr td:last-child {
+    width: 90%;
+  }
+  tr th:first-child {
+    width: 5%;
+  }
+  tr th:nth-child(2) {
+    width: 5%;
+  }
+  ins, del {
+    text-decoration: none;
+  }
+}
+
+#layout.compact-layout, #layout.default-layout {
+  &.twocols table.Differences {
+    th {
+      font-size: 0.75em;
+    }
+    td {
+      font-size: 0.916em;
+    }
+  }
+}
+form.gipfl-quicksearch {
+    display: block;
+    input.search {
+        width: 8em;
+        min-width: unset;
+        border: none;
+        background-size: 0.75em auto;
+        background-position: 0.5em 0.9em;
+        padding-left: 1.5em;
+        margin-left: 1.5em;
+        font-size: 0.75em;
+        font-weight: normal;
+        &:focus {
+            width: 16em;
+            .transition(width 0.5s ease);
+            border: none;
+        }
+    }
+}
+
+#layout.twocols form.gipfl-quicksearch input.search {
+    float: right;
+}
+div.gipfl-action-bar {
+  > * {
+    vertical-align: middle;
+  }
+  .pagination-control {
+    float: none;
+    clear: none;
+    display: inline-block;
+    line-height: inherit;
+    margin: 0;
+  }
+
+  form input {
+    margin: 0;
+  }
+}
+
+div.gipfl-action-bar a, div.gipfl-action-bar form i {
+  color: @icinga-blue;
+}
+
+div.gipfl-action-bar a.badge {
+  color: inherit;
+}
+
+div.gipfl-action-bar > a {
+  margin-right: 1em;
+}
+
+#layout.twocols div.gipfl-action-bar .pagination-control {
+  li {
+    display: none;
+  }
+
+  li:nth-child(1), li.active, li:last-child {
+    display: list-item;
+  }
+
+  li.active a {
+    border-bottom: none;
+  }
+}
+
+/** Dropdown in action bar **/
+div.gipfl-action-bar ul {
+  padding: 0;
+  margin: 0;
+
+  li {
+    list-style-type: none;
+    a { display: block; }
+  }
+}
+
+div.gipfl-action-bar > ul {
+  display: inline-block;
+  > li {
+    display: inline-block;
+  }
+  ul {
+    padding: 0.5em 1em 1em 0;
+    min-width: 10em;
+    position: absolute;
+    display: none;
+    color: @text-color-inverted;
+    background-color: @text-color;
+    border-radius: 0.1em;
+    border-top-left-radius: 0;
+    box-shadow: 1em 1em 1em 0 rgba(0, 0, 0, 0.2);
+
+    a {
+      display: block;
+      padding: 0.3em 0.5em 0.3em 1em;
+      margin: 0;
+      outline: none;
+      color: @text-color-inverted;
+
+      &:hover {
+        text-decoration: underline;
+        &:before {
+          text-decoration: none;
+        }
+      }
+    }
+
+    li.active a {
+      font-weight: bold;
+    }
+  }
+  > li:hover ul {
+    display: block;
+    z-index: 2;
+  }
+  > li > a {
+    padding: 0.2em 0.5em;
+  }
+  > li:hover {
+    background-color: @text-color;
+    border-top-left-radius: 0.1em;
+    border-top-right-radius: 0.1em;
+    & > a {
+      color: @text-color-inverted;
+      text-decoration: none;
+    }
+  }
+}
+/** END of dropdown in action bar **/
+form.incubator-inline-form {
+    select {
+        width: auto;
+        min-width: unset;
+        max-width: unset;
+        border: none;
+        padding: 0 0.5em;
+        margin: 0;
+        line-height: unset;
+        box-sizing:border-box;
+        height: 1.5em;
+
+        &:hover {
+            border: none;
+        }
+
+        &:focus {
+            border: none;
+        }
+    }
+    input[type=submit] {
+        padding: 0 0.25em;
+        margin: 0 1em 0 0;
+        border: none;
+        line-height: unset;
+        box-sizing: border-box;
+    }
+}
+.Differences {
+    width: 100%;
+    table-layout: fixed;
+    empty-cells: show;
+}
+
+.Differences thead {
+    display: none;
+}
+
+.Differences thead th {
+    text-align: left;
+    padding-left: 4 / 14 * 16em;
+}
+.Differences tbody th {
+    text-align: right;
+    width: 4em;
+    padding: 1px 2px;
+    border-right: 1px solid @gray-light;
+    background: @gray-lightest;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+.Differences tbody td {
+    width: 50%;
+    .preformatted();
+    word-break: break-all;
+}
+
+@color-diff-ins: #bfb;
+@color-diff-del: #faa;
+@color-diff-changed-old: #fdd;
+@color-diff-changed-new: #efe;
+
+.DifferencesSideBySide {
+    ins, del {
+        text-decoration: none;
+    }
+
+    .ChangeInsert {
+        td.Left {
+            background: @gray-lighter;
+        }
+        td.Right {
+            background: @color-diff-ins;
+        }
+    }
+
+    .ChangeDelete {
+        td.Left {
+            background: @color-diff-del;
+        }
+        td.Right {
+            background: @gray-lighter;
+        }
+    }
+
+    .ChangeReplace {
+        td.Left {
+            background: @color-diff-changed-old;
+            del {
+                background: @color-diff-del;
+            }
+        }
+
+        td.Right {
+            background: @color-diff-changed-new;
+            ins {
+                background: @color-diff-ins;
+            }
+        }
+
+    }
+}
+
+.Differences .Skipped {
+    background: @gray-lightest;
+}
+
+.DifferencesInline .ChangeReplace .Left,
+.DifferencesInline .ChangeDelete .Left {
+    background: #fdd;
+}
+
+.DifferencesInline .ChangeReplace .Right,
+.DifferencesInline .ChangeInsert .Right {
+    background: #dfd;
+}
+
+.DifferencesInline .ChangeReplace ins {
+    background: #9e9;
+}
+
+.DifferencesInline .ChangeReplace del {
+    background: #e99;
+}
+form.gipfl-form {
+  label {
+    line-height: 2em;
+  }
+  dl {
+    margin: 0;
+    padding: 0;
+    &.active {
+      // pointing to active element:
+      dt label::after {
+        font-family: 'ifont';
+        // icon: right-big
+        content: '\e826';
+        margin-left: 1em;
+        padding-top: 0;
+        float: right;
+        color: @icinga-blue;
+      }
+    }
+  }
+
+  dt {
+    padding: 0;
+    margin: 0.5em 0 0 0;
+    display: inline-block;
+    vertical-align: top;
+    min-width: 8em;
+    max-width: 16em;
+    min-height: 2.5em;
+    width: 27%;
+    label {
+      color: @text-color;
+      font-weight: bold;
+      width: 12em;
+      font-size: inherit;
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+
+    &.errors label {
+      color: @color-critical;
+    }
+  }
+
+  dd {
+    padding: 0.3em 0.5em;
+    margin: 0;
+    display: inline-block;
+    width: 73%;
+    min-height: 2.5em;
+    vertical-align: top;
+
+    &.errors {
+      input[type=text], select {
+        border-color: @color-critical;
+      }
+    }
+
+    &.full-width {
+      padding: 0.5em;
+      width: 100%;
+    }
+
+    &:after {
+      display: block;
+      content: '';
+    }
+
+    ul.errors, ul.gipfl-form-element-errors {
+      list-style-type: none;
+      padding-left: 0.3em;
+
+      li {
+        color: @colorCritical;
+        padding: 0.3em;
+      }
+    }
+  }
+
+  .errors label {
+    color: @color-critical;
+  }
+
+  textarea {
+    height: auto;
+    max-width: 100%;
+  }
+
+  input[type=file] {
+    background-color: @text-color-inverted;
+    padding-right: 1em;
+  }
+
+  input[type=submit] {
+    .button();
+    transition: none; // Avoid flickering on autosubmit
+    border-width: 1px;
+    margin-top: 0.5em;
+
+    &:disabled {
+      border-color: @gray-light;
+      // background-color: @gray-light;
+      // color: #fff;
+      cursor: wait;
+    }
+    &:first-of-type {
+      border-width: 2px;
+    }
+  }
+
+  select {
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background: @gipfl-bg-element;
+  }
+
+  input,
+  select,
+  select option,
+  textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  select::-ms-expand,
+  input::-ms-expand,
+  textarea::-ms-expand { // for IE 11
+    display: none;
+  }
+
+  input[type=submit].link-button {
+    color: @icinga-blue;
+    background: none;
+    border: none;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  ul.form-errors {
+    list-style-type: none;
+    margin-bottom: 0.5em;
+    padding: 0;
+
+    ul.errors {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul.errors li {
+      background: @color-critical;
+      font-weight: bold;
+      padding: 0.5em 1em;
+      color: white;
+    }
+  }
+
+  input[type=text], input[type=password], textarea, select {
+    max-width: 36em;
+    min-width: 20em;
+    width: 100%;
+  }
+  input:not([type=submit]),
+  textarea,
+  select {
+    line-height: 2em;
+    height: 2.4em;
+    padding-left: 0.5em;
+    border-style: solid;
+    border-color: @gray-lighter;
+    border-width: 1px;
+    border-radius: 3px;
+    color: @text-color;
+    background-color: @gipfl-bg-element;
+
+    &:hover {
+      border-color: @gray;
+    }
+
+    &:focus, &:focus:hover {
+      border-color: @icinga-blue;
+      outline: none;
+    }
+  }
+  textarea {
+    height: unset;
+    min-height: 2.4em;
+    resize: vertical;
+  }
+
+  input.search {
+    background: transparent url("../img/icons/search.png") no-repeat scroll 0.5em center / 1em 1em;
+    padding-left: 2em;
+  }
+
+  select[multiple], select[multiple=multiple] {
+    height: auto;
+  }
+
+  select option {
+    height: 2em;
+    padding-top: 0.3em;
+  }
+
+  #_FAKE_SUBMIT {
+    position: absolute;
+    left: -100%;
+  }
+
+  select::-moz-focus-inner {
+    border: 0;
+  }
+
+  select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
+
+  select[value=""] {
+    color: blue;
+    border: 1px solid #666;
+    // background-color: white;
+  }
+
+  select option {
+    color: inherit;
+    padding-left: 0.5em;
+  }
+
+  // default option
+  select option[value=""] {
+    // color: #aaa;
+  }
+
+  fieldset {
+    margin: 0;
+    min-width: 36em;
+
+    padding: 0 0 1.5em 0;
+    border: none;
+
+    legend {
+      margin: 0 0 0.5em 0;
+      font-size: 1em;
+      border-bottom: 1px solid @gray-light;
+      font-weight: bold;
+      display: block;
+      width: 100%;
+      padding-left: 1em;
+      line-height: 2em;
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+
+      &:hover {
+        border-color: @text-color;
+      }
+
+      &::before {
+        // icon: down-dir
+        font-family: 'ifont';
+        content: '\e81d';
+        margin-left: -1em;
+        padding-top: 0;
+        float: left;
+        color: inherit;
+      }
+    }
+
+    &.collapsed {
+      dl, dd, dt, ul, div {
+        display: none;
+      }
+
+      legend {
+        margin: 0;
+      }
+      legend::before {
+        // icon: right-dir
+        content: '\e820';
+      }
+
+      margin-bottom: 0.2em;
+      padding-bottom: 0;
+    }
+  }
+}
+
+#layout.minimal-layout div.content form.gipfl-form {
+  dt, dd {
+    display: block;
+    width: auto;
+  }
+
+  dt label {
+    color: @text-color;
+  }
+
+  fieldset {
+    min-width: unset;
+  }
+
+  input[type=text], input[type=password], textarea, select {
+    max-width: unset;
+    min-width: unset;
+    border-color: @gray-light;
+  }
+
+  dd.active {
+    input[type=text], input[type=password], textarea, select {
+      border-color: @icinga-blue;
+    }
+  }
+
+  fieldset.collapsed {
+    dd, dt, ul, div {
+      display: none;
+    }
+  }
+}
+
+@gipfl-color-low-sat-blue: #dae3e6;
+// map Icinga vars, to avoid warnings in other files
+@gipfl-color-main: @icinga-blue;
+@gipfl-color-text: @text-color;
+@gipfl-color-gray-light: @gray-light;
+@gipfl-bg-element: #f2f1f0;
+@gipfl-bg-element: @low-sat-blue;
+@gipfl-icon-font: 'ifont';
+/**
+ * State Hints
+ *
+ * @since v0.6.0
+ */
+p.gipfl-widget-hint {
+    border: 1px solid @text-color;
+    padding: 0.5em;
+    line-height: 2em;
+    max-width: 60em;
+    border-left-width: 3em;
+    border-radius: 0.25em;
+    background-color: @body-bg-color;
+    box-shadow: fade(@text-color, 15%) 1em 0 1.5em 0;
+    &:before {
+        position: relative;
+        margin-left: -1.4em;
+        margin-right: 0.5em;
+        height: 100%;
+        vertical-align: middle;
+        font-family: 'ifont';
+        color: white;
+        font-size: 2em;
+    }
+    &.ok {
+        border-color: @color-ok;
+    }
+    &.info {
+        border-color: @color-pending;
+    }
+    &.warning {
+        border-color: @color-warning;
+    }
+    &.error {
+        border-color: @color-critical;
+    }
+    &.critical:before, &.error:before {
+        content: '\e881';
+    }
+    &.warning:before {
+        content: '\e881';
+    }
+    &.info:before {
+        content: '\e87d';
+    }
+    &.ok:before {
+        content: '\e803';
+    }
+    a {
+        text-decoration: underline;
+    }
+}
+form.gipfl-form {
+  input[type="submit"] {
+    margin-right: 0.5em;
+  }
+  input[type="submit"]:first-of-type {
+    background-color: @icinga-blue;
+    color: @text-color-inverted;
+    border: 2px solid @icinga-blue;
+    font-weight: bold;
+  }
+
+  select:not([multiple]) {
+    padding-right: 1.5625em;
+    background-image: url(../img/select-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+  }
+
+  input.validated {
+    background-color: fade(@color-ok, 30%);
+    border-color: @color-ok;
+  }
+
+  :not(output):-moz-ui-invalid, :not(output).invalid {
+    background-color: fade(@color-critical, 30%);
+    border-color: @color-critical;
+    box-shadow: none;
+  }
+
+  input[type=text].input-with-button {
+    max-width: 30em;
+    min-width: 18em;
+    width: 80%;
+    margin: 0;
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+    border-right-style: none;
+    &:focus {
+      border-right-style: none;
+    }
+  }
+
+  input[type=submit].input-element-related-button {
+    width: 20%;
+    max-width: 6em;
+    background-color: @icinga-blue;
+    color: @text-color-inverted;
+    border: 1px solid @icinga-blue;
+    border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0 3px 3px 0;
+    line-height: 2em;
+    height: 2.4em;
+    padding: 0;
+    margin: 0 1em 0 0;
+    &:hover {
+      background-color: @text-color-inverted;
+      color: @icinga-blue;
+      border-color: @icinga-blue;
+    }
+  }
+  p.gipfl-widget-hint {
+    max-width: 52.5em;
+  }
+  p.gipfl-element-description {
+    max-width: 36em;
+  }
+}
+/**
+ * Lightweight support for small collapsible components
+ *
+ * @since v0.6.0
+ */
+.gipfl-collapsible-control {
+    display: block;
+    border-bottom: 1px solid @gipfl-color-gray-light;
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+    &::after {
+        font-family: @gipfl-icon-font;
+        content: '\f103';
+        float: right;
+        margin-right: 0.5em;
+        color: @gipfl-color-gray-light;
+    }
+    &:hover {
+        &::after {
+            color: @gipfl-color-text;
+        }
+    }
+    &:focus {
+        text-decoration: none;
+        &::after {
+            color: @gipfl-color-main;
+        }
+    }
+}
+
+.gipfl-collapsible .collapsed {
+    :not(.gipfl-collapsible-control) {
+        display: none;
+    }
+    .gipfl-collapsible-control {
+        &::after {
+            content: '\e87a';
+        }
+    }
+}
+
+ul.gipfl-collapsible {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+        margin: 0;
+    }
+    .gipfl-collapsible-control {
+        font-weight: bold;
+        line-height: 2em;
+    }
+}
+table.gipfl-name-value-table {
+  width: 100%;
+  > tbody > tr > th {
+    color: @text-color-light;
+    // Reset default font-weight
+    font-weight: bold;
+    padding-left: 0;
+    text-align: right;
+    vertical-align: top;
+    width: 12em;
+  }
+  > tbody > tr > td {
+    vertical-align: top;
+  }
+}
+
+table.gipfl-name-value-table a {
+  color: @icinga-blue;
+}
+
+table.gipfl-name-value-table pre {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  font-size: unset;
+  display: inline;
+}
+#layout.minimal-layout div.content form.gipfl-form {
+  ul.extensible-set {
+    max-width: unset;
+    border: 1px solid @gray-light;
+  }
+
+  dd.active ul.extensible-set {
+    border: 1px solid @icinga-blue;
+
+    input[type=submit]:first-of-type {
+      border-width: 1px;
+    }
+  }
+
+  dd input.related-action[type='submit'] {
+    display: none;
+  }
+
+  dd.active li.active input.related-action[type='submit'] {
+    display: inline-block;
+  }
+
+  dd.active ul.extensible-set, ul.extensible-set.sortable {
+    input[type=text], select {
+      width: 100%;
+    }
+
+    input[type=text] {
+      // background-color: white;
+      border: 1px solid white;
+    }
+  }
+}
