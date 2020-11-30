@@ -28,7 +28,7 @@ git rm -rf vendor
 rm -rf vendor
 rm -f composer.lock
 composer install || fail "composer install failed"
-find vendor/ -type f -name "*.php" -or -name "*.js" -or -name "*.css" -or -name "*.json" \
+find vendor/ -type f -name "*.php" -or -name "*.js" -or -name "*.css" -or -name "*.less" -or -name "*.json" \
  | grep -v '/examples/' \
  | grep -v '/example/' \
  | grep -v '/tests/' \
