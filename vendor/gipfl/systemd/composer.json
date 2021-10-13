@@ -1,0 +1,26 @@
+{
+    "name": "gipfl/systemd",
+    "description": "SystemD-related library",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Gelf",
+            "email": "thomas@gelf.net"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "gipfl\\SystemD\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.6.3",
+        "ext-posix": "*",
+        "ext-sockets": "*",
+        "react/event-loop": "^1.0"
+    }
+}

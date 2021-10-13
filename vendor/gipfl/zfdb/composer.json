@@ -1,0 +1,16 @@
+{
+    "name": "gipfl/zfdb",
+    "description": "Zend_Db from Zend Framework 1. For compatibility reasons only",
+    "type": "library",
+    "require": {
+        "php": ">=5.4"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "gipfl\\ZfDb\\": "src"
+        }
+    }
+}
