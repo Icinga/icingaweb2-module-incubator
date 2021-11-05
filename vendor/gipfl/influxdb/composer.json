@@ -1,0 +1,34 @@
+{
+    "name": "gipfl/influxdb",
+    "description": "InfluxDB client library",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "gipfl\\InfluxDb\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Thomas Gelf",
+            "email": "thomas@gelf.net"
+        }
+    ],
+    "repositories": [
+    {
+        "type": "path",
+        "url": "/shared-data/lxc-shared/PHP/gipfl-libs/curl",
+        "options": {
+            "symlink": true
+        }
+    }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "ext-ctype": "*",
+        "ext-pcntl": "*",
+        "gipfl/curl": "@dev",
+        "react/event-loop": ">=1.1",
+        "gipfl/json": "^0.1.0"
+    }
+}
