@@ -28,7 +28,7 @@
         "gipfl/influxdb": ">=0.1",
         "gipfl/json": ">=0.1",
         "gipfl/linux-health": ">=0.2",
-        "gipfl/log": ">=0.3.1",
+        "gipfl/log": ">=0.5",
         "gipfl/protocol-jsonrpc": ">=0.5.0",
         "gipfl/protocol-netstring": ">=0.1",
         "gipfl/react-utils": ">=0.3",
@@ -37,7 +37,7 @@
         "gipfl/stream": ">=0.1",
         "gipfl/systemd": ">=0.3",
         "gipfl/translation": ">=0.1",
-        "gipfl/web": ">=0.3",
+        "gipfl/web": ">=0.7.1",
         "gipfl/zfdb": ">=0.1",
         "gipfl/zfdbstore": ">=0.1"
     },
