@@ -1,0 +1,23 @@
+{
+    "name": "gipfl/process",
+    "description": "Process-related utility classes",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "gipfl\\Process\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Thomas Gelf",
+            "email": "thomas@gelf.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "ext-json": "*",
+        "react/child-process": ">=0.6",
+        "react/promise": "^2"
+    }
+}

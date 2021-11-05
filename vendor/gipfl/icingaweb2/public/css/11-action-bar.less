@@ -1,0 +1,107 @@
+div.gipfl-action-bar {
+  > * {
+    vertical-align: middle;
+  }
+  .pagination-control {
+    float: none;
+    clear: none;
+    display: inline-block;
+    line-height: inherit;
+    margin: 0;
+  }
+
+  form input {
+    margin: 0;
+  }
+}
+
+div.gipfl-action-bar a, div.gipfl-action-bar form i {
+  color: @icinga-blue;
+}
+
+div.gipfl-action-bar a.badge {
+  color: inherit;
+}
+
+div.gipfl-action-bar > a {
+  margin-right: 1em;
+}
+
+#layout.twocols div.gipfl-action-bar .pagination-control {
+  li {
+    display: none;
+  }
+
+  li:nth-child(1), li.active, li:last-child {
+    display: list-item;
+  }
+
+  li.active a {
+    border-bottom: none;
+  }
+}
+
+/** Dropdown in action bar **/
+div.gipfl-action-bar ul {
+  padding: 0;
+  margin: 0;
+
+  li {
+    list-style-type: none;
+    a { display: block; }
+  }
+}
+
+div.gipfl-action-bar > ul {
+  display: inline-block;
+  > li {
+    display: inline-block;
+  }
+  ul {
+    padding: 0.5em 1em 1em 0;
+    min-width: 10em;
+    position: absolute;
+    display: none;
+    color: @text-color-inverted;
+    background-color: @text-color;
+    border-radius: 0.1em;
+    border-top-left-radius: 0;
+    box-shadow: 1em 1em 1em 0 rgba(0, 0, 0, 0.2);
+
+    a {
+      display: block;
+      padding: 0.3em 0.5em 0.3em 1em;
+      margin: 0;
+      outline: none;
+      color: @text-color-inverted;
+
+      &:hover {
+        text-decoration: underline;
+        &:before {
+          text-decoration: none;
+        }
+      }
+    }
+
+    li.active a {
+      font-weight: bold;
+    }
+  }
+  > li:hover ul {
+    display: block;
+    z-index: 2;
+  }
+  > li > a {
+    padding: 0.2em 0.5em;
+  }
+  > li:hover {
+    background-color: @text-color;
+    border-top-left-radius: 0.1em;
+    border-top-right-radius: 0.1em;
+    & > a {
+      color: @text-color-inverted;
+      text-decoration: none;
+    }
+  }
+}
+/** END of dropdown in action bar **/
