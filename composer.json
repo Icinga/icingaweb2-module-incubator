@@ -39,7 +39,7 @@
         "gipfl/translation": ">=0.1",
         "gipfl/web": ">=0.7.2",
         "gipfl/zfdb": ">=0.1",
-        "gipfl/zfdbstore": ">=0.1"
+        "gipfl/zfdbstore": ">=0.2.2"
     },
     "scripts": {
         "post-update-cmd": [
