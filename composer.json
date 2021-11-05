@@ -37,7 +37,7 @@
         "gipfl/stream": ">=0.1",
         "gipfl/systemd": ">=0.3",
         "gipfl/translation": ">=0.1",
-        "gipfl/web": ">=0.7.1",
+        "gipfl/web": ">=0.7.2",
         "gipfl/zfdb": ">=0.1",
         "gipfl/zfdbstore": ">=0.1"
     },
