@@ -1,0 +1,52 @@
+/**
+ * State Hints
+ *
+ * @since v0.6.0
+ */
+p.gipfl-widget-hint {
+    border: 1px solid @text-color;
+    padding: 0.5em;
+    line-height: 2em;
+    max-width: 60em;
+    border-left-width: 3em;
+    border-radius: 0.25em;
+    background-color: @body-bg-color;
+    box-shadow: fade(@text-color, 15%) 1em 0 1.5em 0;
+    &:before {
+        position: relative;
+        margin-left: -1.4em;
+        margin-right: 0.5em;
+        height: 100%;
+        vertical-align: middle;
+        font-family: 'ifont';
+        color: white;
+        font-size: 2em;
+    }
+    &.ok {
+        border-color: @color-ok;
+    }
+    &.info {
+        border-color: @color-pending;
+    }
+    &.warning {
+        border-color: @color-warning;
+    }
+    &.error {
+        border-color: @color-critical;
+    }
+    &.critical:before, &.error:before {
+        content: '\e881';
+    }
+    &.warning:before {
+        content: '\e881';
+    }
+    &.info:before {
+        content: '\e87d';
+    }
+    &.ok:before {
+        content: '\e803';
+    }
+    a {
+        text-decoration: underline;
+    }
+}
