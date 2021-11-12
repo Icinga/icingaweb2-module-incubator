@@ -30,7 +30,7 @@
         "gipfl/linux-health": ">=0.2",
         "gipfl/log": ">=0.7",
         "gipfl/process": ">=0.2",
-        "gipfl/protocol-jsonrpc": ">=0.6",
+        "gipfl/protocol-jsonrpc": ">=0.6.1",
         "gipfl/protocol-netstring": ">=0.1",
         "gipfl/react-utils": ">=0.3",
         "gipfl/simple-daemon": ">=0.4.1",
