@@ -1,0 +1,16 @@
+{
+    "name": "gipfl/db-migration",
+    "description": "Simple DB migration helper",
+    "type": "library",
+    "require": {
+        "php": ">=5.6"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "gipfl\\DbMigration\\": "src"
+        }
+    }
+}
