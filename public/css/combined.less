@@ -1,7 +1,10 @@
 @color-diff-ins: #bfb;
 @color-diff-del: #faa;
-@color-diff-changed-old: #fdd;
-@color-diff-changed-new: #efe;
+@color-diff-changed-old: @state-critical;
+@color-diff-changed-new: @state-ok;
+@color-change-replace-del: #e99;
+@green-shade-light: #dfd;
+@pale-green: #9e9;
 
 .Differences {
   width: 100%;
@@ -22,8 +25,9 @@
   text-align: right;
   width: 4em;
   padding: 1px 2px;
-  border-right: 1px solid @gray-light;
-  background: @gray-lightest;
+  border-right: 1px solid;
+  .var(border-right-color, gray-light);
+  .var(background, gray-lightest);
   font-weight: normal;
   vertical-align: top;
 }
@@ -41,34 +45,34 @@
 
   .ChangeInsert {
     td.Left {
-      background: @gray-lighter;
+      .var(background, gray-lighter);
     }
     td.Right {
-      background: @color-diff-ins;
+      .var(background, color-diff-ins);
     }
   }
 
   .ChangeDelete {
     td.Left {
-      background: @color-diff-del;
+      .var(background, color-diff-del);
     }
     td.Right {
-      background: @gray-lighter;
+      .var(background, gray-lighter);
     }
   }
 
   .ChangeReplace {
     td.Left {
-      background: @color-diff-changed-old;
+      .var(background, color-diff-changed-old);
       del {
-        background: @color-diff-del;
+        .var(background, color-diff-del);
       }
     }
 
     td.Right {
-      background: @color-diff-changed-new;
+      .var(background, color-diff-changed-new);
       ins {
-        background: @color-diff-ins;
+        .var(background, color-diff-ins);
       }
     }
 
@@ -76,25 +80,25 @@
 }
 
 .Differences .Skipped {
-  background: @gray-lightest;
+  .var(background, gray-lightest);
 }
 
 .DifferencesInline .ChangeReplace .Left,
 .DifferencesInline .ChangeDelete .Left {
-  background: #fdd;
+  .var(background, color-diff-changed-old);
 }
 
 .DifferencesInline .ChangeReplace .Right,
 .DifferencesInline .ChangeInsert .Right {
-  background: #dfd;
+  .var(background, green-shade-light);
 }
 
 .DifferencesInline .ChangeReplace ins {
-  background: #9e9;
+  .var(background, pale-green);
 }
 
 .DifferencesInline .ChangeReplace del {
-  background: #e99;
+  .var(background, color-change-replace-del);
 }
 
 .DifferencesInline {
@@ -122,6 +126,29 @@
     }
   }
 }
+form.gipfl-quicksearch {
+  display: block;
+  input.search {
+    width: 8em;
+    min-width: unset;
+    border: none;
+    background-size: 0.75em auto;
+    background-position: 0.5em 0.9em;
+    padding-left: 1.5em;
+    margin-left: 1.5em;
+    font-size: 0.75em;
+    font-weight: normal;
+    &:focus {
+      width: 16em;
+      .transition(width 0.5s ease);
+      border: none;
+    }
+  }
+}
+
+#layout.twocols form.gipfl-quicksearch input.search {
+  float: right;
+}
 div.gipfl-action-bar {
   > * {
     vertical-align: middle;
@@ -140,7 +167,7 @@ div.gipfl-action-bar {
 }
 
 div.gipfl-action-bar a, div.gipfl-action-bar form i {
-  color: @icinga-blue;
+  .var(color, icinga-blue);
 }
 
 div.gipfl-action-bar a.badge {
@@ -186,8 +213,8 @@ div.gipfl-action-bar > ul {
     min-width: 10em;
     position: absolute;
     display: none;
-    color: @text-color-inverted;
-    background-color: @text-color;
+    //.var(color, text-color-inverted);
+    //.var(background-color, text-color);
     border-radius: 0.1em;
     border-top-left-radius: 0;
     box-shadow: 1em 1em 1em 0 rgba(0, 0, 0, 0.2);
@@ -197,7 +224,7 @@ div.gipfl-action-bar > ul {
       padding: 0.3em 0.5em 0.3em 1em;
       margin: 0;
       outline: none;
-      color: @text-color-inverted;
+      .var(color, icinga-blue);
 
       &:hover {
         text-decoration: underline;
@@ -219,249 +246,136 @@ div.gipfl-action-bar > ul {
     padding: 0.2em 0.5em;
   }
   > li:hover {
-    background-color: @text-color;
+    .var(background-color, tr-active-color);
     border-top-left-radius: 0.1em;
     border-top-right-radius: 0.1em;
     & > a {
-      color: @text-color-inverted;
+      .var(color, icinga-blue);
       text-decoration: none;
     }
   }
 }
 /** END of dropdown in action bar **/
-form.gipfl-quicksearch {
-    display: block;
-    input.search {
-        width: 8em;
-        min-width: unset;
-        border: none;
-        background-size: 0.75em auto;
-        background-position: 0.5em 0.9em;
-        padding-left: 1.5em;
-        margin-left: 1.5em;
-        font-size: 0.75em;
-        font-weight: normal;
-        &:focus {
-            width: 16em;
-            .transition(width 0.5s ease);
-            border: none;
-        }
-    }
-}
-
-#layout.twocols form.gipfl-quicksearch input.search {
-    float: right;
-}
-@gipfl-color-low-sat-blue: #dae3e6;
-// map Icinga vars, to avoid warnings in other files
-@gipfl-color-main: @icinga-blue;
-@gipfl-color-text: @text-color;
-@gipfl-color-gray-light: @gray-light;
-@gipfl-bg-element: #f2f1f0;
-@gipfl-bg-element: @low-sat-blue;
-@gipfl-icon-font: 'ifont';
-/**
- * Lightweight support for small collapsible components
- *
- * @since v0.6.0
- */
-.gipfl-collapsible-control {
-    display: block;
-    border-bottom: 1px solid @gipfl-color-gray-light;
-    &:hover {
-        cursor: pointer;
-        text-decoration: none;
-    }
-    &::after {
-        font-family: @gipfl-icon-font;
-        content: '\f103';
-        float: right;
-        margin-right: 0.5em;
-        color: @gipfl-color-gray-light;
-    }
-    &:hover {
-        &::after {
-            color: @gipfl-color-text;
-        }
-    }
-    &:focus {
-        text-decoration: none;
-        &::after {
-            color: @gipfl-color-main;
-        }
-    }
-}
-
-.gipfl-collapsible .collapsed {
-    :not(.gipfl-collapsible-control) {
-        display: none;
-    }
-    .gipfl-collapsible-control {
-        &::after {
-            content: '\e87a';
-        }
-    }
-}
-
-ul.gipfl-collapsible {
-    list-style-type: none;
+form.incubator-inline-form {
+  select {
+    width: auto;
+    min-width: unset;
+    max-width: unset;
+    border: none;
+    padding: 0 0.5em;
     margin: 0;
-    padding: 0;
-    li {
-        margin: 0;
-    }
-    .gipfl-collapsible-control {
-        font-weight: bold;
-        line-height: 2em;
-    }
-}
-/**
- * State Hints
- *
- * @since v0.6.0
- */
-p.gipfl-widget-hint {
-    border: 1px solid @text-color;
-    padding: 0.5em;
-    line-height: 2em;
-    max-width: 60em;
-    border-left-width: 3em;
-    border-radius: 0.25em;
-    background-color: @body-bg-color;
-    box-shadow: fade(@text-color, 15%) 1em 0 1.5em 0;
-    &:before {
-        position: relative;
-        margin-left: -1.4em;
-        margin-right: 0.5em;
-        height: 100%;
-        vertical-align: middle;
-        font-family: 'ifont';
-        color: white;
-        font-size: 2em;
-    }
-    &.ok {
-        border-color: @color-ok;
-    }
-    &.info {
-        border-color: @color-pending;
-    }
-    &.warning {
-        border-color: @color-warning;
-    }
-    &.error {
-        border-color: @color-critical;
-    }
-    &.critical:before, &.error:before {
-        content: '\e881';
-    }
-    &.warning:before {
-        content: '\e881';
-    }
-    &.info:before {
-        content: '\e87d';
-    }
-    &.ok:before {
-        content: '\e803';
-    }
-    a {
-        text-decoration: underline;
-    }
-}
-table.gipfl-name-value-table {
-  width: 100%;
-  > tbody > tr > th {
-    color: @text-color-light;
-    // Reset default font-weight
-    font-weight: bold;
-    padding-left: 0;
-    text-align: right;
-    vertical-align: top;
-    width: 12em;
-  }
-  > tbody > tr > td {
-    vertical-align: top;
-  }
-}
+    line-height: unset;
+    box-sizing:border-box;
+    height: 1.5em;
 
-table.gipfl-name-value-table a {
-  color: @icinga-blue;
-}
+    &:hover {
+      border: none;
+    }
 
-table.gipfl-name-value-table pre {
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-  font-size: unset;
-  display: inline;
-}
-form.gipfl-form {
-  input[type="submit"] {
-    margin-right: 0.5em;
-  }
-  input[type="submit"]:first-of-type {
-    background-color: @icinga-blue;
-    color: @text-color-inverted;
-    border: 2px solid @icinga-blue;
-    font-weight: bold;
-  }
-
-  select:not([multiple]) {
-    padding-right: 1.5625em;
-    background-image: url(../img/select-icon.svg);
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: contain;
-  }
-
-  input.validated {
-    background-color: fade(@color-ok, 30%);
-    border-color: @color-ok;
-  }
-
-  :not(output):-moz-ui-invalid, :not(output).invalid {
-    background-color: fade(@color-critical, 30%);
-    border-color: @color-critical;
-    box-shadow: none;
-  }
-
-  input[type=text].input-with-button {
-    max-width: 30em;
-    min-width: 18em;
-    width: 80%;
-    margin: 0;
-    border-top-right-radius: unset;
-    border-bottom-right-radius: unset;
-    border-right-style: none;
     &:focus {
-      border-right-style: none;
+      border: none;
     }
   }
-
-  input[type=submit].input-element-related-button {
-    width: 20%;
-    max-width: 6em;
-    background-color: @icinga-blue;
-    color: @text-color-inverted;
-    border: 1px solid @icinga-blue;
-    border-radius: 0 3px 3px 0;
-    -moz-border-radius: 0 3px 3px 0;
-    -webkit-border-radius: 0 3px 3px 0;
-    line-height: 2em;
-    height: 2.4em;
-    padding: 0;
+  input[type=submit] {
+    padding: 0 0.25em;
     margin: 0 1em 0 0;
-    &:hover {
-      background-color: @text-color-inverted;
-      color: @icinga-blue;
-      border-color: @icinga-blue;
+    border: none;
+    line-height: unset;
+    box-sizing: border-box;
+  }
+}
+.Differences {
+  width: 100%;
+  table-layout: fixed;
+  empty-cells: show;
+}
+
+.Differences thead {
+  display: none;
+}
+
+.Differences thead th {
+  text-align: left;
+  padding-left: 4 / 14 * 16em;
+}
+.Differences tbody th {
+  text-align: right;
+  width: 4em;
+  padding: 1px 2px;
+  border-right: 1px solid;
+  .var(border-right-color, gray-light);
+  .var(background, gray-lightest);
+  font-weight: normal;
+  vertical-align: top;
+}
+
+.Differences tbody td {
+  width: 50%;
+  .preformatted();
+  word-break: break-all;
+}
+
+.DifferencesSideBySide {
+  ins, del {
+    text-decoration: none;
+  }
+
+  .ChangeInsert {
+    td.Left {
+      .var(background, gray-lighter);
+    }
+    td.Right {
+      .var(background, color-diff-ins);
     }
   }
-  p.gipfl-widget-hint {
-    max-width: 52.5em;
+
+  .ChangeDelete {
+    td.Left {
+      .var(background, color-diff-del);
+    }
+    td.Right {
+      .var(background, gray-lighter);
+    }
   }
-  p.gipfl-element-description {
-    max-width: 36em;
+
+  .ChangeReplace {
+    td.Left {
+      .var(background, color-diff-changed-old);
+      del {
+        .var(background, color-diff-del);
+      }
+    }
+
+    td.Right {
+      .var(background, color-diff-changed-new);
+      ins {
+        .var(background, color-diff-ins);
+      }
+    }
+
   }
+}
+
+.Differences .Skipped {
+  .var(background, gray-lightest);
+}
+
+.DifferencesInline .ChangeReplace .Left,
+.DifferencesInline .ChangeDelete .Left {
+  .var(background, color-diff-changed-old);
+}
+
+.DifferencesInline .ChangeReplace .Right,
+.DifferencesInline .ChangeInsert .Right {
+  .var(background, green-shade-light);
+}
+
+.DifferencesInline .ChangeReplace ins {
+  .var(background, pale-green);
+}
+
+.DifferencesInline .ChangeReplace del {
+  .var(background, color-change-replace-del);
 }
 form.gipfl-form {
   label {
@@ -479,7 +393,7 @@ form.gipfl-form {
         margin-left: 1em;
         padding-top: 0;
         float: right;
-        color: @icinga-blue;
+        .var(color, icinga-blue);
       }
     }
   }
@@ -494,7 +408,7 @@ form.gipfl-form {
     min-height: 2.5em;
     width: 27%;
     label {
-      color: @text-color;
+      .var(color, text-color);
       font-weight: bold;
       width: 12em;
       font-size: inherit;
@@ -506,7 +420,7 @@ form.gipfl-form {
     }
 
     &.errors label {
-      color: @color-critical;
+      .var(color, color-critical);
     }
   }
 
@@ -520,7 +434,7 @@ form.gipfl-form {
 
     &.errors {
       input[type=text], select {
-        border-color: @color-critical;
+        .var(border-color, color-critical);
       }
     }
 
@@ -539,14 +453,14 @@ form.gipfl-form {
       padding-left: 0.3em;
 
       li {
-        color: @colorCritical;
+        .var(color, colorCritical);
         padding: 0.3em;
       }
     }
   }
 
   .errors label {
-    color: @color-critical;
+    .var(color, color-critical);
   }
 
   textarea {
@@ -555,7 +469,7 @@ form.gipfl-form {
   }
 
   input[type=file] {
-    background-color: @text-color-inverted;
+    .var(background-color, text-color-inverted);
     padding-right: 1em;
   }
 
@@ -566,7 +480,7 @@ form.gipfl-form {
     margin-top: 0.5em;
 
     &:disabled {
-      border-color: @gray-light;
+      .var(border-color, gray-light);
       // background-color: @gray-light;
       // color: #fff;
       cursor: wait;
@@ -577,9 +491,10 @@ form.gipfl-form {
   }
 
   select {
-    border: 1px solid #ddd;
+    border: 1px solid;
+    .var(border-color, text-color);
     cursor: pointer;
-    background: @gipfl-bg-element;
+    .var(background, gipfl-bg-element);
   }
 
   input,
@@ -597,7 +512,7 @@ form.gipfl-form {
   }
 
   input[type=submit].link-button {
-    color: @icinga-blue;
+    .var(color, icinga-blue);
     background: none;
     border: none;
     font-weight: normal;
@@ -621,10 +536,10 @@ form.gipfl-form {
     }
 
     ul.errors li {
-      background: @color-critical;
+      .var(background, color-critical);
       font-weight: bold;
       padding: 0.5em 1em;
-      color: white;
+      .var(color, text-color);
     }
   }
 
@@ -640,25 +555,20 @@ form.gipfl-form {
     height: 2.4em;
     padding-left: 0.5em;
     border-style: solid;
-    border-color: @gray-lighter;
+    .var(border-color, gray-lighter);
     border-width: 1px;
     border-radius: 3px;
-    color: @text-color;
-    background-color: @gipfl-bg-element;
+    .var(color, text-color);
+    .var(background-color, gipfl-bg-element);
 
     &:hover {
-      border-color: @gray;
+      .var(border-color, "gray");
     }
 
     &:focus, &:focus:hover {
-      border-color: @icinga-blue;
+      .var(border-color, icinga-blue);
       outline: none;
     }
-  }
-  // duplicated from 40 -> ordering problem
-  input.validated {
-    background-color: fade(@color-ok, 30%);
-    border-color: @color-ok;
   }
   textarea {
     height: unset;
@@ -695,8 +605,9 @@ form.gipfl-form {
   }
 
   select[value=""] {
-    color: blue;
-    border: 1px solid #666;
+    .var(color, icinga-blue);
+    border: 1px solid;
+    .var(border-color, gray-semilight);
     // background-color: white;
   }
 
@@ -720,7 +631,8 @@ form.gipfl-form {
     legend {
       margin: 0 0 0.5em 0;
       font-size: 1em;
-      border-bottom: 1px solid @gray-light;
+      border-bottom: 1px solid;
+      .var(border-bottom-color, gray-light);
       font-weight: bold;
       display: block;
       width: 100%;
@@ -733,7 +645,7 @@ form.gipfl-form {
       -ms-user-select: none;
 
       &:hover {
-        border-color: @text-color;
+        .var(border-color, text-color);
       }
 
       &::before {
@@ -773,7 +685,7 @@ form.gipfl-form {
   }
 
   dt label {
-    color: @text-color;
+    .var(color, text-color);
   }
 
   fieldset {
@@ -783,12 +695,12 @@ form.gipfl-form {
   input[type=text], input[type=password], textarea, select {
     max-width: unset;
     min-width: unset;
-    border-color: @gray-light;
+    .var(border-color, gray-light);
   }
 
   dd.active {
     input[type=text], input[type=password], textarea, select {
-      border-color: @icinga-blue;
+      .var(border-color, icinga-blue);
     }
   }
 
@@ -799,14 +711,231 @@ form.gipfl-form {
   }
 }
 
+@gipfl-color-low-sat-blue: #dae3e6;
+// map Icinga vars, to avoid warnings in other files
+@gipfl-color-main: @icinga-blue;
+@gipfl-color-text: @text-color;
+@gipfl-color-gray-light: @gray-light;
+@gipfl-bg-element: #f2f1f0;
+@gipfl-bg-element: @low-sat-blue;
+@gipfl-icon-font: 'ifont';
+/**
+ * State Hints
+ *
+ * @since v0.6.0
+ */
+p.gipfl-widget-hint {
+  border: 1px solid;
+  .var(border-color, text-color);
+  padding: 0.5em;
+  line-height: 2em;
+  max-width: 60em;
+  border-left-width: 3em;
+  border-radius: 0.25em;
+  .var(background-color, body-bg-color);
+  box-shadow: fade(@text-color, 15%) 1em 0 1.5em 0;
+  &:before {
+    position: relative;
+    margin-left: -1.4em;
+    margin-right: 0.5em;
+    height: 100%;
+    vertical-align: middle;
+    font-family: 'ifont';
+    color: white;
+    font-size: 2em;
+  }
+  &.ok {
+    .var(border-color, color-ok);
+  }
+  &.info {
+    .var(border-color, color-pending);
+  }
+  &.warning {
+    .var(border-color, color-warning);
+  }
+  &.error {
+    .var(border-color, color-critical);
+  }
+  &.critical:before, &.error:before {
+    content: '\e881';
+  }
+  &.warning:before {
+    content: '\e881';
+  }
+  &.info:before {
+    content: '\e87d';
+  }
+  &.ok:before {
+    content: '\e803';
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+form.gipfl-form {
+  input[type="submit"] {
+    margin-right: 0.5em;
+  }
+  input[type="submit"]:first-of-type {
+    .var(background-color, icinga-blue);
+    .var(color, text-color-inverted);
+    border: 2px solid;
+    .var(border-color, icinga-blue);
+    font-weight: bold;
+  }
+
+  select:not([multiple]) {
+    padding-right: 1.5625em;
+    background-image: url(../img/select-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+  }
+
+  input.validated {
+    background-color: fade(@color-ok, 30%);
+    .var(border-color, color-ok);
+  }
+
+  :not(output):-moz-ui-invalid, :not(output).invalid {
+    background-color: fade(@color-critical, 30%);
+    .var(border-color, color-critical);
+    box-shadow: none;
+  }
+
+  input[type=text].input-with-button {
+    max-width: 30em;
+    min-width: 18em;
+    width: 80%;
+    margin: 0;
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+    border-right-style: none;
+    &:focus {
+      border-right-style: none;
+    }
+  }
+
+  input[type=submit].input-element-related-button {
+    width: 20%;
+    max-width: 6em;
+    .var(background-color, icinga-blue);
+    .var(color, text-color-inverted);
+    border: 1px solid;
+    .var(border-color, icinga-blue);
+    border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0 3px 3px 0;
+    line-height: 2em;
+    height: 2.4em;
+    padding: 0;
+    margin: 0 1em 0 0;
+    &:hover {
+      .var(background-color, text-color-inverted);
+      .var(color, icinga-blue);
+      .var(border-color, icinga-blue);
+    }
+  }
+  p.gipfl-widget-hint {
+    max-width: 52.5em;
+  }
+  p.gipfl-element-description {
+    max-width: 36em;
+  }
+}
+/**
+ * Lightweight support for small collapsible components
+ *
+ * @since v0.6.0
+ */
+.gipfl-collapsible-control {
+  display: block;
+  border-bottom: 1px solid;
+  .var(border-bottom-color, gipfl-color-gray-light);
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  &::after {
+    font-family: @gipfl-icon-font;
+    content: '\f103';
+    float: right;
+    margin-right: 0.5em;
+    .var(color, gipfl-color-gray-light);
+  }
+  &:hover {
+    &::after {
+      .var(color, gipfl-color-text);
+    }
+  }
+  &:focus {
+    text-decoration: none;
+    &::after {
+      .var(color, gipfl-color-main);
+    }
+  }
+}
+
+.gipfl-collapsible .collapsed {
+  :not(.gipfl-collapsible-control) {
+    display: none;
+  }
+  .gipfl-collapsible-control {
+    &::after {
+      content: '\e87a';
+    }
+  }
+}
+
+ul.gipfl-collapsible {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0;
+  }
+  .gipfl-collapsible-control {
+    font-weight: bold;
+    line-height: 2em;
+  }
+}
+table.gipfl-name-value-table {
+  width: 100%;
+  > tbody > tr > th {
+    .var(color, text-color-light);
+    // Reset default font-weight
+    font-weight: bold;
+    padding-left: 0;
+    text-align: right;
+    vertical-align: top;
+    width: 12em;
+  }
+  > tbody > tr > td {
+    vertical-align: top;
+  }
+}
+
+table.gipfl-name-value-table a {
+  .var(color, icinga-blue);
+}
+
+table.gipfl-name-value-table pre {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  font-size: unset;
+  display: inline;
+}
 #layout.minimal-layout div.content form.gipfl-form {
   ul.extensible-set {
     max-width: unset;
-    border: 1px solid @gray-light;
+    border: 1px solid;
+    .var(border-color, gray-light);
   }
 
   dd.active ul.extensible-set {
-    border: 1px solid @icinga-blue;
+    border: 1px solid;
+    .var(border-color, icinga-blue);
 
     input[type=submit]:first-of-type {
       border-width: 1px;
@@ -832,129 +961,15 @@ form.gipfl-form {
     }
   }
 }
-form.gipfl-inline-form {
-    display: inline-block;
-    select {
-        width: auto;
-        min-width: unset;
-        max-width: unset;
-        border: none;
-        padding: 0 0.5em;
-        margin: 0;
-        line-height: unset;
-        box-sizing:border-box;
-        height: 1.5em;
 
-        &:hover {
-            border: none;
-        }
-
-        &:focus {
-            border: none;
-        }
-    }
-    input[type=submit] {
-        padding: 0 0.25em;
-        margin: 0 1em 0 0;
-        border: none;
-        line-height: unset;
-        box-sizing: border-box;
-    }
-}
-.Differences {
-    width: 100%;
-    table-layout: fixed;
-    empty-cells: show;
-}
-
-.Differences thead {
-    display: none;
-}
-
-.Differences thead th {
-    text-align: left;
-    padding-left: 4 / 14 * 16em;
-}
-.Differences tbody th {
-    text-align: right;
-    width: 4em;
-    padding: 1px 2px;
-    border-right: 1px solid @gray-light;
-    background: @gray-lightest;
-    font-weight: normal;
-    vertical-align: top;
-}
-
-.Differences tbody td {
-    width: 50%;
-    .preformatted();
-    word-break: break-all;
-}
-
-@color-diff-ins: #bfb;
-@color-diff-del: #faa;
-@color-diff-changed-old: #fdd;
-@color-diff-changed-new: #efe;
-
-.DifferencesSideBySide {
-    ins, del {
-        text-decoration: none;
-    }
-
-    .ChangeInsert {
-        td.Left {
-            background: @gray-lighter;
-        }
-        td.Right {
-            background: @color-diff-ins;
-        }
-    }
-
-    .ChangeDelete {
-        td.Left {
-            background: @color-diff-del;
-        }
-        td.Right {
-            background: @gray-lighter;
-        }
-    }
-
-    .ChangeReplace {
-        td.Left {
-            background: @color-diff-changed-old;
-            del {
-                background: @color-diff-del;
-            }
-        }
-
-        td.Right {
-            background: @color-diff-changed-new;
-            ins {
-                background: @color-diff-ins;
-            }
-        }
-
-    }
-}
-
-.Differences .Skipped {
-    background: @gray-lightest;
-}
-
-.DifferencesInline .ChangeReplace .Left,
-.DifferencesInline .ChangeDelete .Left {
-    background: #fdd;
-}
-
-.DifferencesInline .ChangeReplace .Right,
-.DifferencesInline .ChangeInsert .Right {
-    background: #dfd;
-}
-
-.DifferencesInline .ChangeReplace ins {
-    background: #9e9;
-}
-
-.DifferencesInline .ChangeReplace del {
-    background: #e99;
+@media (min-height: @prefer-light-color-scheme), (prefers-color-scheme: light) and (min-height: @enable-color-preference) {
+  :root {
+    --color-diff-ins: #bfb;
+    --color-diff-del: #faa;
+    --color-diff-changed-old: #fdd;
+    //--color-diff-changed-new: #efe;
+    --color-change-replace-del: #e99;
+    --green-shade-light: #dfd;
+    --pale-green: #9e9;
+  }
 }
