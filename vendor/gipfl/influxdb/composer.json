@@ -1,0 +1,25 @@
+{
+    "name": "gipfl/influxdb",
+    "description": "InfluxDB client library",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "gipfl\\InfluxDb\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Thomas Gelf",
+            "email": "thomas@gelf.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "ext-ctype": "*",
+        "ext-pcntl": "*",
+        "gipfl/curl": ">=0.1.1",
+        "react/event-loop": ">=1.1",
+        "gipfl/json": ">=0.2"
+    }
+}

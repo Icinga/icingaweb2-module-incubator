@@ -1,0 +1,24 @@
+{
+    "name": "gipfl/react-utils",
+    "description": "Useful ReactPHP-related helper classes and methods",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Gelf",
+            "email": "thomas@gelf.net"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "gipfl\\ReactUtils\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.6.0",
+        "gipfl/log": ">=0.1"
+    }
+}

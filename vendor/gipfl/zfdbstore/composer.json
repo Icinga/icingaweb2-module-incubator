@@ -1,0 +1,16 @@
+{
+    "name": "gipfl/zfdbstore",
+    "description": "Storable class helpers for ZfDb",
+    "type": "library",
+    "require": {
+        "php": ">=5.6"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "gipfl\\ZfDbStore\\": "src"
+        }
+    }
+}
