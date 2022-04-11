@@ -1,0 +1,127 @@
+@color-diff-ins: @color-ok;
+@color-diff-del: @color-critical;
+@color-diff-changed-old: fade(@color-critical, 30%);
+@color-diff-changed-new: fade(@color-ok, 30%);
+@color-diff-green-shade-light: #dfd;
+@color-diff-pale-green: #9e9;
+@color-change-replace-del: #e99;
+
+.Differences {
+  width: 100%;
+  table-layout: fixed;
+  empty-cells: show;
+}
+
+.Differences thead {
+  display: none;
+}
+
+.Differences thead th {
+  text-align: left;
+  padding-left: 4 / 14 * 16em;
+}
+
+.Differences tbody th {
+  text-align: right;
+  width: 4em;
+  padding: 1px 2px;
+  border-right: 1px solid @gray-light;
+  background: @gray-lightest;
+  font-weight: normal;
+  vertical-align: top;
+}
+
+.Differences tbody td {
+  width: 50%;
+  .preformatted();
+  word-break: break-all;
+}
+
+.DifferencesSideBySide {
+  ins, del {
+    text-decoration: none;
+  }
+
+  .ChangeInsert {
+    td.Left {
+      background: @gray-lighter;
+    }
+    td.Right {
+      background: @color-diff-changed-new;
+    }
+  }
+
+  .ChangeDelete {
+    td.Left {
+      background: @color-diff-changed-old;
+    }
+    td.Right {
+      background: @gray-lighter;
+    }
+  }
+
+  .ChangeReplace {
+    td.Left {
+      background: @color-diff-changed-old;
+      del {
+        background: @color-diff-del;
+      }
+    }
+
+    td.Right {
+      background: @color-diff-changed-new;
+      ins {
+        background: @color-diff-ins;
+      }
+    }
+
+  }
+}
+
+.Differences .Skipped {
+  background: @gray-lightest;
+}
+
+.DifferencesInline .ChangeReplace .Left,
+.DifferencesInline .ChangeDelete .Left {
+  background: @color-diff-changed-old;
+}
+
+.DifferencesInline .ChangeReplace .Right,
+.DifferencesInline .ChangeInsert .Right {
+  background: @color-diff-green-shade-light;
+}
+
+.DifferencesInline .ChangeReplace ins {
+  background: @color-diff-pale-green;
+}
+
+.DifferencesInline .ChangeReplace del {
+  background: @color-change-replace-del;
+}
+
+.DifferencesInline {
+  tr td:last-child {
+    width: 90%;
+  }
+  tr th:first-child {
+    width: 5%;
+  }
+  tr th:nth-child(2) {
+    width: 5%;
+  }
+  ins, del {
+    text-decoration: none;
+  }
+}
+
+#layout.compact-layout, #layout.default-layout {
+  &.twocols table.Differences {
+    th {
+      font-size: 0.75em;
+    }
+    td {
+      font-size: 0.916em;
+    }
+  }
+}
