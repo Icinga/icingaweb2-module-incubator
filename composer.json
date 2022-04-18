@@ -22,7 +22,7 @@
         "gipfl/curl": ">=0.2",
         "gipfl/data-type": ">=0.2.0",
         "gipfl/db-migration": ">=0.1.1",
-        "gipfl/diff": ">=0.2",
+        "gipfl/diff": ">=0.3",
         "gipfl/format": ">=0.3",
         "gipfl/icinga-bundles": ">=0.7",
         "gipfl/icinga-cli-daemon": ">=0.3.2",
@@ -40,7 +40,7 @@
         "gipfl/stream": ">=0.2",
         "gipfl/systemd": ">=0.3",
         "gipfl/translation": ">=0.1.1",
-        "gipfl/web": ">=0.7.3",
+        "gipfl/web": ">=0.8",
         "gipfl/zfdb": ">=0.3",
         "gipfl/zfdbstore": ">=0.2.2"
     },
