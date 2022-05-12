@@ -1,0 +1,20 @@
+{
+    "name": "gipfl/json",
+    "description": "Simple JSON-related helper classes and interfaces",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "gipfl\\Json\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Thomas Gelf",
+            "email": "thomas@gelf.net"
+        }
+    ],
+    "require": {
+      "ext-json": "*"
+    }
+}

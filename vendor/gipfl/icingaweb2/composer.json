@@ -1,0 +1,21 @@
+{
+  "name": "gipfl/icingaweb2",
+  "type": "library",
+  "description": "Helpers and glue for Icinga Web 2",
+  "homepage": "https://github.com/gipfl/icingaweb2",
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "gipfl\\IcingaWeb2\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=5.6",
+    "ext-ctype": "*",
+    "gipfl/format": ">=0.3",
+    "gipfl/translation": ">=0.1",
+    "ipl/html": ">=0.2.1"
+  }
+}
