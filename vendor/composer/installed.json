@@ -1,0 +1,1350 @@
+{
+    "packages": [
+        {
+            "name": "gipfl/calendar",
+            "version": "v0.2.0",
+            "version_normalized": "0.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/calendar.git",
+                "reference": "a8b24f375c36fb8bb70034423c70299d07bddc81"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/calendar/zipball/a8b24f375c36fb8bb70034423c70299d07bddc81",
+                "reference": "a8b24f375c36fb8bb70034423c70299d07bddc81",
+                "shasum": ""
+            },
+            "require": {
+                "gipfl/format": "^0.3.0",
+                "gipfl/icingaweb2": ">=0.4.0",
+                "gipfl/translation": ">=0.1.1",
+                "php": ">=5.4.0"
+            },
+            "time": "2021-12-06T16:31:58+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\Calendar\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Calendar Utils",
+            "homepage": "https://github.com/gipfl/calendar",
+            "keywords": [
+                "calendar"
+            ],
+            "support": {
+                "issues": "https://github.com/gipfl/calendar/issues",
+                "source": "https://github.com/gipfl/calendar/tree/v0.2.0"
+            },
+            "install-path": "../gipfl/calendar"
+        },
+        {
+            "name": "gipfl/cli",
+            "version": "v0.5.1",
+            "version_normalized": "0.5.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/cli.git",
+                "reference": "9fc6f25598f208c1bafaa4b9ee87d0465fdf2452"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/cli/zipball/9fc6f25598f208c1bafaa4b9ee87d0465fdf2452",
+                "reference": "9fc6f25598f208c1bafaa4b9ee87d0465fdf2452",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-pcntl": "*",
+                "ext-posix": "*",
+                "php": ">=5.6.0",
+                "react/promise": "^2",
+                "react/stream": ">=1.1"
+            },
+            "require-dev": {
+                "react/child-process": ">=0.6"
+            },
+            "time": "2021-11-22T16:07:17+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\Cli\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "CLI utilities",
+            "support": {
+                "issues": "https://github.com/gipfl/cli/issues",
+                "source": "https://github.com/gipfl/cli/tree/v0.5.1"
+            },
+            "install-path": "../gipfl/cli"
+        },
+        {
+            "name": "gipfl/curl",
+            "version": "v0.2.0",
+            "version_normalized": "0.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/curl.git",
+                "reference": "20459fd8c68d86e3df30eb76f1938cc72c25d4fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/curl/zipball/20459fd8c68d86e3df30eb76f1938cc72c25d4fa",
+                "reference": "20459fd8c68d86e3df30eb76f1938cc72c25d4fa",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "guzzlehttp/psr7": ">=1.6",
+                "php": ">=5.6.3",
+                "psr/http-message": "^1.0",
+                "react/event-loop": ">=1.0",
+                "react/promise": ">=2",
+                "react/stream": ">=1.0"
+            },
+            "time": "2022-04-11T15:31:45+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\Curl\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "ReactPHP-friendly async CURL abstraction",
+            "support": {
+                "issues": "https://github.com/gipfl/curl/issues",
+                "source": "https://github.com/gipfl/curl/tree/v0.2.0"
+            },
+            "install-path": "../gipfl/curl"
+        },
+        {
+            "name": "gipfl/data-type",
+            "version": "v0.2.0",
+            "version_normalized": "0.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/data-type.git",
+                "reference": "e8e6ca6f5abfb27200fdc1b6b1e700f85ca38b1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/data-type/zipball/e8e6ca6f5abfb27200fdc1b6b1e700f85ca38b1f",
+                "reference": "e8e6ca6f5abfb27200fdc1b6b1e700f85ca38b1f",
+                "shasum": ""
+            },
+            "require": {
+                "gipfl/json": ">=0.2.0",
+                "php": ">=5.6.0"
+            },
+            "time": "2021-12-08T23:52:18+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\DataType\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Serializable Data Types",
+            "support": {
+                "issues": "https://github.com/gipfl/data-type/issues",
+                "source": "https://github.com/gipfl/data-type/tree/v0.2.0"
+            },
+            "install-path": "../gipfl/data-type"
+        },
+        {
+            "name": "gipfl/db-migration",
+            "version": "v0.1.1",
+            "version_normalized": "0.1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/db-migration.git",
+                "reference": "12be94b0c83a5e018c9d3d42fe8e98b4cbe248ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/db-migration/zipball/12be94b0c83a5e018c9d3d42fe8e98b4cbe248ee",
+                "reference": "12be94b0c83a5e018c9d3d42fe8e98b4cbe248ee",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "time": "2021-11-11T15:40:11+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\DbMigration\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Simple DB migration helper",
+            "support": {
+                "issues": "https://github.com/gipfl/db-migration/issues",
+                "source": "https://github.com/gipfl/db-migration/tree/v0.1.1"
+            },
+            "install-path": "../gipfl/db-migration"
+        },
+        {
+            "name": "gipfl/diff",
+            "version": "v0.3.0",
+            "version_normalized": "0.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/diff.git",
+                "reference": "f9decb9cf20735d6cbe6f508aafd8a720922804b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/diff/zipball/f9decb9cf20735d6cbe6f508aafd8a720922804b",
+                "reference": "f9decb9cf20735d6cbe6f508aafd8a720922804b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ipl/html": ">=0.2",
+                "php": ">=5.6.0"
+            },
+            "time": "2022-04-18T11:39:03+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\Diff\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "php-diff wrapper supporting ipl/html",
+            "support": {
+                "issues": "https://github.com/gipfl/diff/issues",
+                "source": "https://github.com/gipfl/diff/tree/v0.3.0"
+            },
+            "install-path": "../gipfl/diff"
+        },
+        {
+            "name": "gipfl/format",
+            "version": "v0.3.0",
+            "version_normalized": "0.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/format.git",
+                "reference": "b777cd55d4a02312b1ec115231e54729a91dcc25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/format/zipball/b777cd55d4a02312b1ec115231e54729a91dcc25",
+                "reference": "b777cd55d4a02312b1ec115231e54729a91dcc25",
+                "shasum": ""
+            },
+            "require": {
+                "ext-intl": "*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3 || ^7.5 || ^6.5 || ^5.7",
+                "squizlabs/php_codesniffer": "^3.6"
+            },
+            "time": "2021-12-06T12:07:32+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\Format\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Arbitrary collection of Format helpers",
+            "support": {
+                "issues": "https://github.com/gipfl/format/issues",
+                "source": "https://github.com/gipfl/format/tree/v0.3.0"
+            },
+            "install-path": "../gipfl/format"
+        },
+        {
+            "name": "gipfl/icinga-bundles",
+            "version": "v0.7.0",
+            "version_normalized": "0.7.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/icinga-bundles.git",
+                "reference": "d28e12218c07174795e07d7ad235d3fac2a6be53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/icinga-bundles/zipball/d28e12218c07174795e07d7ad235d3fac2a6be53",
+                "reference": "d28e12218c07174795e07d7ad235d3fac2a6be53",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*"
+            },
+            "replace": {
+                "clue/block-react": "v1.4.0",
+                "clue/buzz-react": "v2.7.0",
+                "clue/connection-manager-extra": "v1.1.0",
+                "clue/http-proxy-react": "v1.5.0",
+                "clue/mq-react": "v1.2.0",
+                "clue/redis-protocol": "v0.3.1",
+                "clue/redis-react": "v2.3.0",
+                "clue/soap-react": "v1.0.0",
+                "clue/socket-raw": "v1.4.1",
+                "clue/socks-react": "v1.1.0",
+                "clue/stdio-react": "v2.3.0",
+                "clue/term-react": "v1.2.0",
+                "clue/utf8-react": "v1.1.0",
+                "evenement/evenement": "v2.1.0",
+                "guzzlehttp/psr7": "1.6.1",
+                "ipl/html": "v0.3.0",
+                "ipl/orm": "v0.1.0",
+                "ipl/sql": "v0.1.0",
+                "ipl/stdlib": "v0.5.0",
+                "ipl/validator": "v0.1.0",
+                "ipl/web": "v0.1.0",
+                "paragonie/random_compat": "v2.0.18",
+                "predis/predis": "v1.1.6",
+                "psr/http-message": "1.0.1",
+                "ralouphie/getallheaders": "3.0.3",
+                "ramsey/uuid": "3.9.3",
+                "react/cache": "v1.1.0",
+                "react/child-process": "v0.6.1",
+                "react/datagram": "v1.5.0",
+                "react/dns": "v1.4.0",
+                "react/event-loop": "v1.1.1",
+                "react/http": "v1.1.0",
+                "react/http-client": "v0.5.10",
+                "react/promise": "v2.8.0",
+                "react/promise-stream": "v1.2.0",
+                "react/promise-timer": "v1.6.0",
+                "react/socket": "v1.6.0",
+                "react/stream": "v1.1.1",
+                "ringcentral/psr7": "1.3.0",
+                "symfony/polyfill-ctype": "v1.18.1"
+            },
+            "time": "2020-10-08T17:20:30+00:00",
+            "type": "metapackage",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Provides (replaces) all packages provided by ipl and reactbundle",
+            "support": {
+                "issues": "https://github.com/gipfl/icinga-bundles/issues",
+                "source": "https://github.com/gipfl/icinga-bundles/tree/v0.7.0"
+            },
+            "install-path": null
+        },
+        {
+            "name": "gipfl/icinga-cli-daemon",
+            "version": "v0.3.2",
+            "version_normalized": "0.3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/icinga-cli-daemon.git",
+                "reference": "19e1b203108fda37de39488fd8ff7ea392a42f03"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/icinga-cli-daemon/zipball/19e1b203108fda37de39488fd8ff7ea392a42f03",
+                "reference": "19e1b203108fda37de39488fd8ff7ea392a42f03",
+                "shasum": ""
+            },
+            "require": {
+                "ext-posix": "*",
+                "gipfl/cli": ">=0.5.0",
+                "php": ">=5.6.3",
+                "react/event-loop": ">=1.1",
+                "react/promise": ">=2.7"
+            },
+            "time": "2021-10-13T08:49:48+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\IcingaCliDaemon\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Helpers for Icinga CLI Daemons",
+            "homepage": "https://github.com/gipfl/icinga-cli-daemon",
+            "support": {
+                "issues": "https://github.com/gipfl/icinga-cli-daemon/issues",
+                "source": "https://github.com/gipfl/icinga-cli-daemon/tree/v0.3.2"
+            },
+            "install-path": "../gipfl/icinga-cli-daemon"
+        },
+        {
+            "name": "gipfl/icingaweb2",
+            "version": "v0.8.0",
+            "version_normalized": "0.8.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/icingaweb2.git",
+                "reference": "5b48b218e130f90d7c91d58eca63b0ebbf366e0f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/icingaweb2/zipball/5b48b218e130f90d7c91d58eca63b0ebbf366e0f",
+                "reference": "5b48b218e130f90d7c91d58eca63b0ebbf366e0f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "gipfl/format": ">=0.3",
+                "gipfl/translation": ">=0.1",
+                "ipl/html": ">=0.2.1",
+                "php": ">=5.6"
+            },
+            "time": "2022-06-20T08:38:59+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\IcingaWeb2\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Helpers and glue for Icinga Web 2",
+            "homepage": "https://github.com/gipfl/icingaweb2",
+            "support": {
+                "issues": "https://github.com/gipfl/icingaweb2/issues",
+                "source": "https://github.com/gipfl/icingaweb2/tree/v0.8.0"
+            },
+            "install-path": "../gipfl/icingaweb2"
+        },
+        {
+            "name": "gipfl/influxdb",
+            "version": "v0.4.0",
+            "version_normalized": "0.4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/influxdb.git",
+                "reference": "308cfe528ae7632bce5506956d7dfbad4e4e8d19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/influxdb/zipball/308cfe528ae7632bce5506956d7dfbad4e4e8d19",
+                "reference": "308cfe528ae7632bce5506956d7dfbad4e4e8d19",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-pcntl": "*",
+                "gipfl/curl": ">=0.1.1",
+                "gipfl/json": ">=0.2",
+                "php": ">=5.6.0",
+                "react/event-loop": ">=1.1"
+            },
+            "time": "2022-01-12T13:35:26+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\InfluxDb\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "InfluxDB client library",
+            "support": {
+                "issues": "https://github.com/gipfl/influxdb/issues",
+                "source": "https://github.com/gipfl/influxdb/tree/v0.4.0"
+            },
+            "install-path": "../gipfl/influxdb"
+        },
+        {
+            "name": "gipfl/json",
+            "version": "v0.2.0",
+            "version_normalized": "0.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/json.git",
+                "reference": "5635790a19150beeece9edc67e82ecddc52ff4fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/json/zipball/5635790a19150beeece9edc67e82ecddc52ff4fb",
+                "reference": "5635790a19150beeece9edc67e82ecddc52ff4fb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*"
+            },
+            "time": "2021-11-18T12:48:06+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\Json\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Simple JSON-related helper classes and interfaces",
+            "support": {
+                "issues": "https://github.com/gipfl/json/issues",
+                "source": "https://github.com/gipfl/json/tree/v0.2.0"
+            },
+            "install-path": "../gipfl/json"
+        },
+        {
+            "name": "gipfl/linux-health",
+            "version": "v0.2.0",
+            "version_normalized": "0.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/linux-health.git",
+                "reference": "4d212535565f353f88c9eef3ecb54e20c40b8b37"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/linux-health/zipball/4d212535565f353f88c9eef3ecb54e20c40b8b37",
+                "reference": "4d212535565f353f88c9eef3ecb54e20c40b8b37",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "time": "2020-07-30T09:11:27+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\LinuxHealth\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Various little Linux Health based classes",
+            "support": {
+                "issues": "https://github.com/gipfl/linux-health/issues",
+                "source": "https://github.com/gipfl/linux-health/tree/master"
+            },
+            "install-path": "../gipfl/linux-health"
+        },
+        {
+            "name": "gipfl/log",
+            "version": "v0.7.0",
+            "version_normalized": "0.7.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/log.git",
+                "reference": "df770bdc9c09b0428831345af7ce7d45a0c3a1bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/log/zipball/df770bdc9c09b0428831345af7ce7d45a0c3a1bb",
+                "reference": "df770bdc9c09b0428831345af7ce7d45a0c3a1bb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-iconv": "*",
+                "php": ">=5.6.0",
+                "psr/log": "^1"
+            },
+            "require-dev": {
+                "gipfl/protocol-jsonrpc": ">=0.2",
+                "gipfl/systemd": ">=0.3"
+            },
+            "time": "2021-11-11T15:39:23+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\Log\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Lightweight PSR-3 compatible logger",
+            "support": {
+                "issues": "https://github.com/gipfl/log/issues",
+                "source": "https://github.com/gipfl/log/tree/v0.7.0"
+            },
+            "install-path": "../gipfl/log"
+        },
+        {
+            "name": "gipfl/openrpc",
+            "version": "v0.2.1",
+            "version_normalized": "0.2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/openrpc.git",
+                "reference": "a29b8da2cdaf7d757d86aa0fe6d719cf68fb95ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/openrpc/zipball/a29b8da2cdaf7d757d86aa0fe6d719cf68fb95ad",
+                "reference": "a29b8da2cdaf7d757d86aa0fe6d719cf68fb95ad",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.6.0"
+            },
+            "time": "2021-11-29T13:53:50+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\OpenRpc\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "OpenRPC Connection implementation",
+            "support": {
+                "issues": "https://github.com/gipfl/openrpc/issues",
+                "source": "https://github.com/gipfl/openrpc/tree/v0.2.1"
+            },
+            "install-path": "../gipfl/openrpc"
+        },
+        {
+            "name": "gipfl/process",
+            "version": "v0.3.0",
+            "version_normalized": "0.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/process.git",
+                "reference": "22cae0a5791d7760e5defa28c7f7360f3bf78db3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/process/zipball/22cae0a5791d7760e5defa28c7f7360f3bf78db3",
+                "reference": "22cae0a5791d7760e5defa28c7f7360f3bf78db3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "gipfl/json": ">=0.1",
+                "gipfl/linux-health": ">=0.2",
+                "php": ">=5.6.0",
+                "react/child-process": ">=0.6",
+                "react/promise": "^2"
+            },
+            "time": "2021-11-29T13:50:33+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\Process\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Process-related utility classes",
+            "support": {
+                "issues": "https://github.com/gipfl/process/issues",
+                "source": "https://github.com/gipfl/process/tree/v0.3.0"
+            },
+            "install-path": "../gipfl/process"
+        },
+        {
+            "name": "gipfl/protocol",
+            "version": "v0.2.0",
+            "version_normalized": "0.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/protocol.git",
+                "reference": "bf1a0e160fe6f74c6be60be569c466d57551e73d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/protocol/zipball/bf1a0e160fe6f74c6be60be569c466d57551e73d",
+                "reference": "bf1a0e160fe6f74c6be60be569c466d57551e73d",
+                "shasum": ""
+            },
+            "require": {
+                "evenement/evenement": "^2",
+                "php": ">=5.4.0",
+                "react/stream": "^1.0"
+            },
+            "time": "2020-09-22T04:22:23+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\Protocol\\Generic\\": "src/Generic",
+                    "gipfl\\Protocol\\Exception\\": "src/Exception"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Base library for some network protocol implementations",
+            "support": {
+                "issues": "https://github.com/gipfl/protocol/issues",
+                "source": "https://github.com/gipfl/protocol/tree/v0.2.0"
+            },
+            "install-path": "../gipfl/protocol"
+        },
+        {
+            "name": "gipfl/protocol-jsonrpc",
+            "version": "v0.10.0",
+            "version_normalized": "0.10.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/protocol-jsonrpc.git",
+                "reference": "12a8ada5f7d102288aad6e2a0139663d26ed66ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/protocol-jsonrpc/zipball/12a8ada5f7d102288aad6e2a0139663d26ed66ad",
+                "reference": "12a8ada5f7d102288aad6e2a0139663d26ed66ad",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "gipfl/json": ">=0.1",
+                "gipfl/openrpc": "^0.2.1",
+                "gipfl/protocol": ">=0.2",
+                "php": ">=5.6.0",
+                "psr/log": ">=1.1",
+                "react/promise": ">=2.7",
+                "react/stream": ">=1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3 || ^7.5 || ^6.5 || ^5.7",
+                "squizlabs/php_codesniffer": "^3.6"
+            },
+            "time": "2022-03-28T10:31:32+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\Protocol\\JsonRpc\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "JsonRPC Connection implementation",
+            "support": {
+                "issues": "https://github.com/gipfl/protocol-jsonrpc/issues",
+                "source": "https://github.com/gipfl/protocol-jsonrpc/tree/v0.10.0"
+            },
+            "install-path": "../gipfl/protocol-jsonrpc"
+        },
+        {
+            "name": "gipfl/protocol-netstring",
+            "version": "v0.1.1",
+            "version_normalized": "0.1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/protocol-netstring.git",
+                "reference": "c0021ea9d69883760ac176121041a05c9a51ca11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/protocol-netstring/zipball/c0021ea9d69883760ac176121041a05c9a51ca11",
+                "reference": "c0021ea9d69883760ac176121041a05c9a51ca11",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "gipfl/protocol": ">=0.2",
+                "php": ">=5.4.0"
+            },
+            "time": "2020-10-08T23:38:20+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\Protocol\\NetString\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Simple NetString stream wrapper",
+            "support": {
+                "issues": "https://github.com/gipfl/protocol-netstring/issues",
+                "source": "https://github.com/gipfl/protocol-netstring/tree/v0.1.1"
+            },
+            "install-path": "../gipfl/protocol-netstring"
+        },
+        {
+            "name": "gipfl/react-utils",
+            "version": "v0.3.0",
+            "version_normalized": "0.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/react-utils.git",
+                "reference": "37ff2daa4bcc36aced4cc9df5198caad519d7bdb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/react-utils/zipball/37ff2daa4bcc36aced4cc9df5198caad519d7bdb",
+                "reference": "37ff2daa4bcc36aced4cc9df5198caad519d7bdb",
+                "shasum": ""
+            },
+            "require": {
+                "gipfl/log": ">=0.1",
+                "php": ">=5.6.0"
+            },
+            "time": "2021-10-29T12:17:04+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\ReactUtils\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Useful ReactPHP-related helper classes and methods",
+            "support": {
+                "issues": "https://github.com/gipfl/react-utils/issues",
+                "source": "https://github.com/gipfl/react-utils/tree/v0.3.0"
+            },
+            "install-path": "../gipfl/react-utils"
+        },
+        {
+            "name": "gipfl/simple-daemon",
+            "version": "v0.5.1",
+            "version_normalized": "0.5.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/simple-daemon.git",
+                "reference": "67d9265d19284141fd8166bf6c412394a14e72c7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/simple-daemon/zipball/67d9265d19284141fd8166bf6c412394a14e72c7",
+                "reference": "67d9265d19284141fd8166bf6c412394a14e72c7",
+                "shasum": ""
+            },
+            "require": {
+                "evenement/evenement": "*",
+                "ext-pcntl": "*",
+                "gipfl/cli": "^0.5.0",
+                "gipfl/json": ">=0.1",
+                "gipfl/systemd": ">=0.3",
+                "php": ">=5.6.0",
+                "psr/log": ">=1.0",
+                "react/event-loop": ">=1.1",
+                "react/promise": "^2",
+                "react/promise-timer": "^1.5"
+            },
+            "time": "2022-01-12T07:39:35+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\SimpleDaemon\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Run a simple daemon",
+            "support": {
+                "issues": "https://github.com/gipfl/simple-daemon/issues",
+                "source": "https://github.com/gipfl/simple-daemon/tree/v0.5.1"
+            },
+            "install-path": "../gipfl/simple-daemon"
+        },
+        {
+            "name": "gipfl/socket",
+            "version": "v0.4.0",
+            "version_normalized": "0.4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/socket.git",
+                "reference": "1a2c78709e0bcf7de2469860fbfa807a4bcee555"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/socket/zipball/1a2c78709e0bcf7de2469860fbfa807a4bcee555",
+                "reference": "1a2c78709e0bcf7de2469860fbfa807a4bcee555",
+                "shasum": ""
+            },
+            "require": {
+                "evenement/evenement": ">=2.0",
+                "ext-posix": "*",
+                "ext-sockets": "*",
+                "gipfl/json": ">=0.1",
+                "php": ">=5.6.0",
+                "react/event-loop": ">=1.0",
+                "react/socket": ">=1.0"
+            },
+            "time": "2021-12-02T02:23:18+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\Socket\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Helpful ReactPHP socket utility classes",
+            "support": {
+                "issues": "https://github.com/gipfl/socket/issues",
+                "source": "https://github.com/gipfl/socket/tree/v0.4.0"
+            },
+            "install-path": "../gipfl/socket"
+        },
+        {
+            "name": "gipfl/stream",
+            "version": "v0.2.0",
+            "version_normalized": "0.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/stream.git",
+                "reference": "ae0f8f4fd47a6dcc57885b232e239b0ba82889a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/stream/zipball/ae0f8f4fd47a6dcc57885b232e239b0ba82889a3",
+                "reference": "ae0f8f4fd47a6dcc57885b232e239b0ba82889a3",
+                "shasum": ""
+            },
+            "require": {
+                "react/event-loop": ">=1.0",
+                "react/stream": ">=1.0"
+            },
+            "require-dev": {
+                "gipfl/test": ">=0.1.1",
+                "phpunit/phpunit": "^9.3 || ^7.5 || ^6.5 || ^5.7",
+                "squizlabs/php_codesniffer": "^3.6"
+            },
+            "time": "2021-11-27T12:17:36+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\Stream\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Helpful ReactPHP stream utility classes",
+            "support": {
+                "issues": "https://github.com/gipfl/stream/issues",
+                "source": "https://github.com/gipfl/stream/tree/v0.2.0"
+            },
+            "install-path": "../gipfl/stream"
+        },
+        {
+            "name": "gipfl/systemd",
+            "version": "v0.3.0",
+            "version_normalized": "0.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/systemd.git",
+                "reference": "ccfabb352a9ea9fd33d4cb426bc3793a651bf466"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/systemd/zipball/ccfabb352a9ea9fd33d4cb426bc3793a651bf466",
+                "reference": "ccfabb352a9ea9fd33d4cb426bc3793a651bf466",
+                "shasum": ""
+            },
+            "require": {
+                "ext-posix": "*",
+                "ext-sockets": "*",
+                "php": ">=5.6.3",
+                "react/event-loop": "^1.0"
+            },
+            "time": "2020-11-13T22:35:11+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\SystemD\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "SystemD-related library",
+            "support": {
+                "issues": "https://github.com/gipfl/systemd/issues",
+                "source": "https://github.com/gipfl/systemd/tree/v0.3.0"
+            },
+            "install-path": "../gipfl/systemd"
+        },
+        {
+            "name": "gipfl/translation",
+            "version": "v0.1.1",
+            "version_normalized": "0.1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/translation.git",
+                "reference": "e974e6a2f0b524678b6554ee0046b5dd5f70a25d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/translation/zipball/e974e6a2f0b524678b6554ee0046b5dd5f70a25d",
+                "reference": "e974e6a2f0b524678b6554ee0046b5dd5f70a25d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "time": "2019-09-17T20:36:20+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\Translation\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Translation helpers",
+            "support": {
+                "issues": "https://github.com/gipfl/translation/issues",
+                "source": "https://github.com/gipfl/translation/tree/master"
+            },
+            "install-path": "../gipfl/translation"
+        },
+        {
+            "name": "gipfl/web",
+            "version": "v0.10.0",
+            "version_normalized": "0.10.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/web.git",
+                "reference": "f75082f7111d77d7ab620c36a69f61f0f2c246fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/web/zipball/f75082f7111d77d7ab620c36a69f61f0f2c246fe",
+                "reference": "f75082f7111d77d7ab620c36a69f61f0f2c246fe",
+                "shasum": ""
+            },
+            "require": {
+                "gipfl/translation": ">=0.1.1",
+                "ipl/html": ">=0.3",
+                "php": ">=5.6.0"
+            },
+            "time": "2022-05-11T11:20:34+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\Web\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gelf",
+                    "email": "thomas@gelf.net"
+                }
+            ],
+            "description": "Various web widgets",
+            "support": {
+                "issues": "https://github.com/gipfl/web/issues",
+                "source": "https://github.com/gipfl/web/tree/v0.10.0"
+            },
+            "install-path": "../gipfl/web"
+        },
+        {
+            "name": "gipfl/zfdb",
+            "version": "v0.3.0",
+            "version_normalized": "0.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/zfdb.git",
+                "reference": "d467205c929945ae104d3729901b991082186323"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/zfdb/zipball/d467205c929945ae104d3729901b991082186323",
+                "reference": "d467205c929945ae104d3729901b991082186323",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "time": "2021-12-02T02:11:35+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\ZfDb\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Zend_Db from Zend Framework 1. For compatibility reasons only",
+            "support": {
+                "issues": "https://github.com/gipfl/zfdb/issues",
+                "source": "https://github.com/gipfl/zfdb/tree/v0.3.0"
+            },
+            "install-path": "../gipfl/zfdb"
+        },
+        {
+            "name": "gipfl/zfdbstore",
+            "version": "0.2.2",
+            "version_normalized": "0.2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gipfl/zfdbstore.git",
+                "reference": "1fa1f7ea2a24a0536681923a30f8ccb4e2a3b377"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gipfl/zfdbstore/zipball/1fa1f7ea2a24a0536681923a30f8ccb4e2a3b377",
+                "reference": "1fa1f7ea2a24a0536681923a30f8ccb4e2a3b377",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "time": "2021-11-05T17:49:57+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "gipfl\\ZfDbStore\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Storable class helpers for ZfDb",
+            "support": {
+                "issues": "https://github.com/gipfl/zfdbstore/issues",
+                "source": "https://github.com/gipfl/zfdbstore/tree/0.2.2"
+            },
+            "install-path": "../gipfl/zfdbstore"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.1.4",
+            "version_normalized": "1.1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2021-05-03T11:20:27+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/1.1.4"
+            },
+            "install-path": "../psr/log"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

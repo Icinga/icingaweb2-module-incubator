@@ -1,0 +1,25 @@
+{
+    "name": "gipfl/diff",
+    "description": "php-diff wrapper supporting ipl/html",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Gelf",
+            "email": "thomas@gelf.net"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "gipfl\\Diff\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.6.0",
+        "ext-mbstring": "*",
+        "ipl/html": ">=0.2"
+    }
+}
