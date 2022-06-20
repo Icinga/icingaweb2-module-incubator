@@ -26,7 +26,7 @@
         "gipfl/format": ">=0.3",
         "gipfl/icinga-bundles": ">=0.7",
         "gipfl/icinga-cli-daemon": ">=0.3.2",
-        "gipfl/icingaweb2": ">=0.6",
+        "gipfl/icingaweb2": ">=0.8",
         "gipfl/influxdb": ">=0.3",
         "gipfl/json": ">=0.2",
         "gipfl/linux-health": ">=0.2",
