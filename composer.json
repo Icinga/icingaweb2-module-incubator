@@ -41,7 +41,7 @@
         "gipfl/systemd": ">=0.3",
         "gipfl/translation": ">=0.1.1",
         "gipfl/web": ">=0.10",
-        "gipfl/zfdb": ">=0.3",
+        "gipfl/zfdb": ">=0.4",
         "gipfl/zfdbstore": ">=0.2.2"
     },
     "scripts": {
