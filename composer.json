@@ -20,7 +20,7 @@
         "gipfl/calendar": ">=0.2",
         "gipfl/cli": ">=0.5.1",
         "gipfl/curl": ">=0.2",
-        "gipfl/data-type": ">=0.2.0",
+        "gipfl/data-type": ">=0.3.0",
         "gipfl/db-migration": ">=0.1.1",
         "gipfl/diff": ">=0.3",
         "gipfl/format": ">=0.3",
