@@ -1,0 +1,20 @@
+{
+    "name": "gipfl/translation",
+    "description": "Translation helpers",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Gelf",
+            "email": "thomas@gelf.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "gipfl\\Translation\\": "src"
+        }
+    }
+}
