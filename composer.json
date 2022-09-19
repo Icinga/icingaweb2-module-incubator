@@ -17,7 +17,7 @@
     "require": {
         "php": ">=5.6.3",
         "ext-ctype": "*",
-        "gipfl/calendar": ">=0.2",
+        "gipfl/calendar": ">=0.3",
         "gipfl/cli": ">=0.5.1",
         "gipfl/curl": ">=0.2",
         "gipfl/data-type": ">=0.3.0",
