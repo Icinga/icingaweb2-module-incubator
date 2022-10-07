@@ -19,7 +19,7 @@
         "ext-ctype": "*",
         "gipfl/calendar": ">=0.3",
         "gipfl/cli": ">=0.6",
-        "gipfl/curl": ">=0.2",
+        "gipfl/curl": ">=0.3",
         "gipfl/data-type": ">=0.3.0",
         "gipfl/db-migration": ">=0.1.1",
         "gipfl/diff": ">=0.3",
