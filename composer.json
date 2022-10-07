@@ -35,7 +35,7 @@
         "gipfl/protocol-jsonrpc": ">=0.10",
         "gipfl/protocol-netstring": ">=0.1.1",
         "gipfl/react-utils": ">=0.3",
-        "gipfl/simple-daemon": ">=0.5.1",
+        "gipfl/simple-daemon": ">=0.6",
         "gipfl/socket": ">=0.4",
         "gipfl/stream": ">=0.2",
         "gipfl/systemd": ">=0.3",
