@@ -12,7 +12,7 @@ Sample Tarball installation
 
 ```sh
 MODULE_NAME=incubator
-MODULE_VERSION=v0.18.0
+MODULE_VERSION=v0.19.0
 MODULES_PATH="/usr/share/icingaweb2/modules"
 MODULE_PATH="${MODULES_PATH}/${MODULE_NAME}"
 RELEASES="https://github.com/Icinga/icingaweb2-module-${MODULE_NAME}/archive"
@@ -27,7 +27,7 @@ Sample GIT installation
 
 ```sh
 MODULE_NAME=incubator
-MODULE_VERSION=v0.18.0
+MODULE_VERSION=v0.19.0
 REPO="https://github.com/Icinga/icingaweb2-module-${MODULE_NAME}"
 MODULES_PATH="/usr/share/icingaweb2/modules"
 git clone ${REPO} "${MODULES_PATH}/${MODULE_NAME}" --branch "${MODULE_VERSION}"
@@ -47,10 +47,19 @@ Developer Documentation
 
 e.g.
 
-    ./bin/make-release.sh 0.18.0
+    ./bin/make-release.sh 0.19.0
 
 Changes
 -------
+
+### v0.19.0
+
+* improved ProcessInfo serialization
+* allow to use Cli\Screen w/o CLI
+* curl: fix PHP 8.1 support in specific error conditions
+* InfluxDB: fix v2 support
+* InfluxDB: body compression
+* InfluxDB: add header for debugging purposes
 
 ### v0.18.0
 
