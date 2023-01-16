@@ -52,6 +52,10 @@ e.g.
 Changes
 -------
 
+### v0.21.0 (unreleased)
+
+* raised gipfl/systemd for PHP 8.2
+
 ### v0.20.0
 
 * improved am/pm formatting
