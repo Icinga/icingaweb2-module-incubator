@@ -1,0 +1,26 @@
+{
+    "name": "gipfl/stream",
+    "description": "Helpful ReactPHP stream utility classes",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "gipfl\\Stream\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Thomas Gelf",
+            "email": "thomas@gelf.net"
+        }
+    ],
+    "require": {
+        "react/event-loop": ">=1.0",
+        "react/stream": ">=1.0"
+    },
+    "require-dev": {
+        "gipfl/test": ">=0.1.1",
+        "phpunit/phpunit": "^9.3 || ^7.5 || ^6.5 || ^5.7",
+        "squizlabs/php_codesniffer": "^3.6"
+    }
+}
