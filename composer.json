@@ -23,16 +23,16 @@
         "gipfl/data-type": ">=0.3.0",
         "gipfl/db-migration": ">=0.1.1",
         "gipfl/diff": ">=0.3",
-        "gipfl/format": ">=0.3",
+        "gipfl/format": ">=0.4",
         "gipfl/icinga-bundles": ">=0.7",
         "gipfl/icinga-cli-daemon": ">=0.3.2",
-        "gipfl/icingaweb2": ">=0.9",
+        "gipfl/icingaweb2": ">=0.10",
         "gipfl/influxdb": ">=0.5",
         "gipfl/json": ">=0.2",
         "gipfl/linux-health": ">=0.2",
         "gipfl/log": ">=0.7",
         "gipfl/process": ">=0.4",
-        "gipfl/protocol-jsonrpc": ">=0.10",
+        "gipfl/protocol-jsonrpc": ">=0.11",
         "gipfl/protocol-netstring": ">=0.1.1",
         "gipfl/react-utils": ">=0.3",
         "gipfl/simple-daemon": ">=0.6",
@@ -42,7 +42,7 @@
         "gipfl/translation": ">=0.1.1",
         "gipfl/web": ">=0.11",
         "gipfl/zfdb": ">=0.4",
-        "gipfl/zfdbstore": ">=0.2.2"
+        "gipfl/zfdbstore": ">=0.3"
     },
     "scripts": {
         "post-update-cmd": [
