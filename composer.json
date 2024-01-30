@@ -12,6 +12,9 @@
         "sort-packages": true,
         "platform": {
             "php": "5.6.3"
+        },
+        "allow-plugins": {
+            "cweagans/composer-patches": true
         }
     },
     "require": {
@@ -42,11 +45,20 @@
         "gipfl/translation": ">=0.1.1",
         "gipfl/web": ">=0.11",
         "gipfl/zfdb": ">=0.4",
-        "gipfl/zfdbstore": ">=0.3"
+        "gipfl/zfdbstore": ">=0.3",
+        "cweagans/composer-patches": "~1.0"
     },
     "scripts": {
         "post-update-cmd": [
             "bin/refresh-public.sh"
         ]
+    },
+    "extra": {
+        "composer-exit-on-patch-failure": true,
+        "patches": {
+            "gipfl/web": {
+                "Gipfl Form: Csrf element validation": "patches/gipfl-web-form.patch"
+            }
+        }
     }
 }
