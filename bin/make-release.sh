@@ -1,9 +1,10 @@
 #!/bin/bash
 
 VERSION="$1"
+NO_OPT="$2"
 
 if [[ -z $VERSION ]]; then
-  echo "USAGE: $0 <version>"
+  echo "USAGE: $0 <version> [--no-tag]"
   echo " e.g.: $0 0.1.0"
   exit 1
 fi
@@ -45,7 +46,14 @@ rm -rf vendor
 git checkout vendor
 composer validate --no-check-all --strict || fail "Composer validate failed"
 
-git tag -a v$VERSION -m "Version v$VERSION"
-echo "Finished, tagged v$VERSION"
-echo "Now please run:"
+if [ -z "$NO_OPT" ]; then
+  git tag -a v$VERSION -m "Version v$VERSION"
+  echo "Finished, tagged v$VERSION"
+  echo "Now please run:"
+else
+  echo "Finished, but not tagged yet"
+  echo "Now please run:"
+  echo "git tag -s v$VERSION -m \"Version v$VERSION\""
+fi
+
 echo "git push -u origin "$BRANCH":"$BRANCH" && git push --tags"
