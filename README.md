@@ -12,7 +12,7 @@ Sample Tarball installation
 
 ```sh
 MODULE_NAME=incubator
-MODULE_VERSION=v0.21.0
+MODULE_VERSION=v0.22.0
 MODULES_PATH="/usr/share/icingaweb2/modules"
 MODULE_PATH="${MODULES_PATH}/${MODULE_NAME}"
 RELEASES="https://github.com/Icinga/icingaweb2-module-${MODULE_NAME}/archive"
@@ -27,7 +27,7 @@ Sample GIT installation
 
 ```sh
 MODULE_NAME=incubator
-MODULE_VERSION=v0.21.0
+MODULE_VERSION=v0.22.0
 REPO="https://github.com/Icinga/icingaweb2-module-${MODULE_NAME}"
 MODULES_PATH="/usr/share/icingaweb2/modules"
 git clone ${REPO} "${MODULES_PATH}/${MODULE_NAME}" --branch "${MODULE_VERSION}"
@@ -47,12 +47,12 @@ Developer Documentation
 
 e.g.
 
-    ./bin/make-release.sh 0.21.0
+    ./bin/make-release.sh 0.22.0
 
 Changes
 -------
 
-### v0.21.0
+### v0.22.0
 
 * raised gipfl/systemd for PHP 8.2
 
