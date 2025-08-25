@@ -43,7 +43,7 @@
         "gipfl/stream": ">=0.2",
         "gipfl/systemd": ">=0.4",
         "gipfl/translation": ">=0.1.1",
-        "gipfl/web": ">=0.11",
+        "icinga/gipfl-web": "dev-main",
         "gipfl/zfdb": ">=0.4",
         "gipfl/zfdbstore": ">=0.3",
         "cweagans/composer-patches": "~1.0"
