@@ -11,38 +11,38 @@
     "config": {
         "sort-packages": true,
         "platform": {
-            "php": "5.6.3"
+            "php": "7.3.0"
         }
     },
     "require": {
-        "php": ">=5.6.3",
+        "php": ">=7.3",
         "ext-ctype": "*",
-        "gipfl/calendar": ">=0.3",
-        "gipfl/cli": ">=0.6",
-        "gipfl/curl": ">=0.3",
-        "gipfl/data-type": ">=0.3.0",
+        "gipfl/calendar": ">=0.3.1",
+        "gipfl/cli": ">=0.7",
+        "gipfl/curl": ">=0.5",
+        "gipfl/data-type": ">=0.4",
         "gipfl/db-migration": ">=0.1.1",
         "gipfl/diff": ">=0.3",
-        "gipfl/format": ">=0.4",
-        "gipfl/icinga-bundles": ">=0.7",
-        "gipfl/icinga-cli-daemon": ">=0.3.2",
-        "gipfl/icingaweb2": ">=0.10",
+        "gipfl/format": ">=0.5",
+        "gipfl/icinga-bundles": ">=0.8",
+        "gipfl/icinga-cli-daemon": ">=0.4",
+        "gipfl/icingaweb2": ">=0.11",
         "gipfl/influxdb": ">=0.5",
-        "gipfl/json": ">=0.2",
+        "gipfl/json": ">=0.3",
         "gipfl/linux-health": ">=0.2",
-        "gipfl/log": ">=0.7",
-        "gipfl/process": ">=0.4",
-        "gipfl/protocol-jsonrpc": ">=0.11",
+        "gipfl/log": ">=0.11.0",
+        "gipfl/process": ">=0.5",
+        "gipfl/protocol-jsonrpc": ">=0.12",
         "gipfl/protocol-netstring": ">=0.1.1",
-        "gipfl/react-utils": ">=0.3",
+        "gipfl/react-utils": ">=0.4",
         "gipfl/simple-daemon": ">=0.6",
-        "gipfl/socket": ">=0.4",
+        "gipfl/socket": ">=0.5",
         "gipfl/stream": ">=0.2",
         "gipfl/systemd": ">=0.4",
         "gipfl/translation": ">=0.1.1",
-        "gipfl/web": ">=0.11",
-        "gipfl/zfdb": ">=0.4",
-        "gipfl/zfdbstore": ">=0.3"
+        "gipfl/web": ">=0.14",
+        "gipfl/zfdb": ">=0.5",
+        "gipfl/zfdbstore": ">=0.4"
     },
     "scripts": {
         "post-update-cmd": [
