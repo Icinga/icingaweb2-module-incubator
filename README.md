@@ -12,7 +12,7 @@ Sample Tarball installation
 
 ```sh
 MODULE_NAME=incubator
-MODULE_VERSION=v0.22.0
+MODULE_VERSION=v0.23.0
 MODULES_PATH="/usr/share/icingaweb2/modules"
 MODULE_PATH="${MODULES_PATH}/${MODULE_NAME}"
 RELEASES="https://github.com/Icinga/icingaweb2-module-${MODULE_NAME}/archive"
@@ -27,7 +27,7 @@ Sample GIT installation
 
 ```sh
 MODULE_NAME=incubator
-MODULE_VERSION=v0.22.0
+MODULE_VERSION=v0.23.0
 REPO="https://github.com/Icinga/icingaweb2-module-${MODULE_NAME}"
 MODULES_PATH="/usr/share/icingaweb2/modules"
 git clone ${REPO} "${MODULES_PATH}/${MODULE_NAME}" --branch "${MODULE_VERSION}"
@@ -47,12 +47,26 @@ Developer Documentation
 
 e.g.
 
-    ./bin/make-release.sh 0.22.0
+    ./bin/make-release.sh 0.23.0
 
 Changes
 -------
 
-### v0.22.0
+### v0.23.0
+
+* now requires at least icinga-php-thirdparty v0.12.1
+* requires at least PHP 7.4
+* supports PHP 8.4
+* supports react/promise 3.x
+* supports psr/log 1.x and 3.x, ships none
+* fixed issue with ill-configured systems w/o locales
+* compatibility with upcoming ipl interface changes
+* improved error handling in curl/async
+* avoids ghost changes in storables
+* improve error handling in protocol/json-rpc
+* raised max parallel connections in curl/async
+
+### v0.21.0
 
 * raised gipfl/systemd for PHP 8.2
 
