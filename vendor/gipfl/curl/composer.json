@@ -1,0 +1,29 @@
+{
+    "name": "gipfl/curl",
+    "description": "ReactPHP-friendly async CURL abstraction",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Gelf",
+            "email": "thomas@gelf.net"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "gipfl\\Curl\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=7.3",
+        "ext-curl": "*",
+        "guzzlehttp/psr7": ">=1.6",
+        "psr/http-message": "^1.0",
+        "react/event-loop": ">=1.0",
+        "react/promise": ">=2",
+        "react/stream": ">=1.0"
+    }
+}

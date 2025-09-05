@@ -1,0 +1,25 @@
+{
+    "name": "gipfl/web",
+    "description": "Various web widgets",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Gelf",
+            "email": "thomas@gelf.net"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "gipfl\\Web\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=7.1",
+        "ipl/html": ">=0.3",
+        "gipfl/translation": ">=0.1.1"
+    }
+}

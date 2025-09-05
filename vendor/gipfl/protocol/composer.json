@@ -1,0 +1,26 @@
+{
+    "name": "gipfl/protocol",
+    "description": "Base library for some network protocol implementations",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Gelf",
+            "email": "thomas@gelf.net"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "gipfl\\Protocol\\Exception\\": "src/Exception",
+            "gipfl\\Protocol\\Generic\\": "src/Generic"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "evenement/evenement": "^2|^3",
+        "react/stream": "^1"
+    }
+}

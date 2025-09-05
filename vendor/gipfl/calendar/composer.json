@@ -1,0 +1,32 @@
+{
+  "name": "gipfl/calendar",
+  "type": "library",
+  "description": "Calendar Utils",
+  "keywords": ["calendar"],
+  "homepage": "https://github.com/gipfl/calendar",
+  "authors": [
+    {
+      "name": "Thomas Gelf",
+      "email": "thomas@gelf.net"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "php": ">=5.4.0",
+    "gipfl/format": ">=0.3",
+    "gipfl/icingaweb2": ">=0.4.0",
+    "gipfl/translation": ">=0.1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "gipfl\\Calendar\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "gipfl\\Tests\\Calendar\\": "tests"
+    }
+  }
+}

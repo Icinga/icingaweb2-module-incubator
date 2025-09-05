@@ -1,0 +1,29 @@
+{
+    "name": "gipfl/log",
+    "description": "Lightweight PSR-3 compatible logger",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Gelf",
+            "email": "thomas@gelf.net"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "gipfl\\Log\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=7.1.0",
+        "ext-iconv": "*"
+    },
+    "require-dev": {
+        "gipfl/protocol-jsonrpc": ">=0.2",
+        "gipfl/systemd": ">=0.3",
+        "psr/log": "^1 || ^3"
+    }
+}

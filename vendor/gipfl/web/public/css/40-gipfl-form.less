@@ -1,0 +1,69 @@
+form.gipfl-form {
+  input[type="submit"] {
+    margin-right: 0.5em;
+  }
+  input[type="submit"]:first-of-type {
+    background-color: @icinga-blue;
+    color: @text-color-inverted;
+    border: 2px solid @icinga-blue;
+    font-weight: bold;
+  }
+
+  select:not([multiple]) {
+    padding-right: 1.5625em;
+    background-image: url(../img/select-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+  }
+
+  input.validated {
+    background-color: fade(@color-ok, 30%);
+    border-color: @color-ok;
+  }
+
+  :not(output):-moz-ui-invalid, :not(output).invalid {
+    background-color: fade(@color-critical, 30%);
+    border-color: @color-critical;
+    box-shadow: none;
+  }
+
+  input[type=text].input-with-button {
+    max-width: 30em;
+    min-width: 18em;
+    width: 80%;
+    margin: 0;
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+    border-right-style: none;
+    &:focus {
+      border-right-style: none;
+    }
+  }
+
+  input[type=submit].input-element-related-button {
+    width: 20%;
+    max-width: 6em;
+    background-color: @icinga-blue;
+    color: @text-color-inverted;
+    border: 1px solid @icinga-blue;
+    border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0 3px 3px 0;
+    line-height: 2em;
+    height: 2.4em;
+    padding: 0;
+    margin: 0 1em 0 0;
+    &:hover {
+      background-color: @text-color-inverted;
+      color: @icinga-blue;
+      border-color: @icinga-blue;
+    }
+  }
+  p.gipfl-widget-hint {
+    max-width: 52.5em;
+  }
+  p.gipfl-element-description {
+    max-width: 36em;
+  }
+}

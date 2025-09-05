@@ -1,0 +1,23 @@
+{
+    "name": "gipfl/linux-health",
+    "description": "Various little Linux Health based classes",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Gelf",
+            "email": "thomas@gelf.net"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "gipfl\\LinuxHealth\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0"
+    }
+}

@@ -1,0 +1,55 @@
+/**
+ * Lightweight support for small collapsible components
+ *
+ * @since v0.6.0
+ */
+.gipfl-collapsible-control {
+    display: block;
+    border-bottom: 1px solid @gipfl-color-gray-light;
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+    &::after {
+        font-family: @gipfl-icon-font;
+        content: '\f103';
+        float: right;
+        margin-right: 0.5em;
+        color: @gipfl-color-gray-light;
+    }
+    &:hover {
+        &::after {
+            color: @gipfl-color-text;
+        }
+    }
+    &:focus {
+        text-decoration: none;
+        &::after {
+            color: @gipfl-color-main;
+        }
+    }
+}
+
+.gipfl-collapsible .collapsed {
+    :not(.gipfl-collapsible-control) {
+        display: none;
+    }
+    .gipfl-collapsible-control {
+        &::after {
+            content: '\e87a';
+        }
+    }
+}
+
+ul.gipfl-collapsible {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+        margin: 0;
+    }
+    .gipfl-collapsible-control {
+        font-weight: bold;
+        line-height: 2em;
+    }
+}

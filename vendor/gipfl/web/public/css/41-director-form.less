@@ -1,0 +1,339 @@
+form.gipfl-form {
+  label {
+    line-height: 2em;
+  }
+  dl {
+    margin: 0;
+    padding: 0;
+    &.active {
+      dt label {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  dt {
+    padding: 0;
+    margin: 0.5em 0 0 0;
+    display: inline-block;
+    vertical-align: top;
+    min-width: 8em;
+    max-width: 16em;
+    min-height: 2.5em;
+    width: 27%;
+    label {
+      color: @text-color;
+      font-weight: bold;
+      width: 12em;
+      font-size: inherit;
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+
+    &.errors label {
+      color: @color-critical;
+    }
+  }
+
+  dd {
+    padding: 0.3em 0.5em;
+    margin: 0;
+    display: inline-block;
+    width: 73%;
+    min-height: 2.5em;
+    vertical-align: top;
+
+    &.errors {
+      input[type=text], select {
+        border-color: @color-critical;
+      }
+    }
+
+    &.full-width {
+      padding: 0.5em;
+      width: 100%;
+    }
+
+    &:after {
+      display: block;
+      content: '';
+    }
+
+    ul.errors, ul.gipfl-form-element-errors {
+      list-style-type: none;
+      padding-left: 0.3em;
+
+      li {
+        color: @colorCritical;
+        padding: 0.3em;
+      }
+    }
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="number"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="time"],
+  textarea,
+  select {
+    background-color: @gipfl-bg-element;
+  }
+
+  .errors label {
+    color: @color-critical;
+  }
+
+  textarea {
+    height: auto;
+    max-width: 100%;
+  }
+
+  input[type=file] {
+    background-color: @text-color-inverted;
+    padding-right: 1em;
+  }
+
+  input[type=submit] {
+    .button();
+    transition: none; // Avoid flickering on autosubmit
+    border-width: 1px;
+    margin-top: 0.5em;
+
+    &:disabled {
+      border-color: @gray-light;
+      // background-color: @gray-light;
+      // color: #fff;
+      cursor: wait;
+    }
+    &:first-of-type {
+      border-width: 2px;
+    }
+  }
+
+  select {
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+
+  input:not([type=checkbox]),
+  select,
+  select option,
+  textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  select::-ms-expand,
+  input::-ms-expand,
+  textarea::-ms-expand { // for IE 11
+    display: none;
+  }
+
+  input[type=submit].link-button {
+    color: @icinga-blue;
+    background: none;
+    border: none;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  ul.form-errors {
+    list-style-type: none;
+    margin-bottom: 0.5em;
+    padding: 0;
+
+    ul.errors {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul.errors li {
+      background: @color-critical;
+      font-weight: bold;
+      padding: 0.5em 1em;
+      color: white;
+    }
+  }
+
+  input[type=text], input[type=password], textarea, select {
+    max-width: 36em;
+    min-width: 20em;
+    width: 100%;
+  }
+  input:not([type=submit]),
+  textarea,
+  select {
+    line-height: 2em;
+    height: 2.4em;
+    padding-left: 0.5em;
+    border-style: solid;
+    border-color: @gray-lighter;
+    border-width: 1px;
+    border-radius: 3px;
+    color: @text-color;
+
+    &:hover {
+      border-color: @gray;
+    }
+
+    &:focus, &:focus:hover {
+      border-color: @icinga-blue;
+      outline: none;
+    }
+  }
+  // duplicated from 40 -> ordering problem
+  input.validated {
+    background-color: fade(@color-ok, 30%);
+    border-color: @color-ok;
+  }
+  textarea {
+    height: unset;
+    min-height: 2.4em;
+    resize: vertical;
+  }
+
+  input.search {
+    background-image: url("../img/icons/search.png");
+    background-repeat: no-repeat;
+    padding-left: 2em;
+  }
+
+  select[multiple], select[multiple=multiple] {
+    height: auto;
+  }
+
+  select option {
+    height: 2em;
+    padding-top: 0.3em;
+  }
+
+  #_FAKE_SUBMIT {
+    position: absolute;
+    left: -100%;
+  }
+
+  select::-moz-focus-inner {
+    border: 0;
+  }
+
+  select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
+
+  select[value=""] {
+    color: blue;
+    border: 1px solid #666;
+    // background-color: white;
+  }
+
+  select option {
+    color: inherit;
+    padding-left: 0.5em;
+  }
+
+  // default option
+  select option[value=""] {
+    // color: #aaa;
+  }
+
+  fieldset {
+    margin: 0;
+    min-width: 36em;
+
+    padding: 0 0 1.5em 0;
+    border: none;
+
+    legend {
+      margin: 0 0 0.5em 0;
+      font-size: 1em;
+      border-bottom: 1px solid @gray-light;
+      font-weight: bold;
+      display: block;
+      width: 100%;
+      padding-left: 1em;
+      line-height: 2em;
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+
+      &:hover {
+        border-color: @text-color;
+      }
+
+      &::before {
+        // icon: down-dir
+        font-family: 'ifont';
+        content: '\e81d';
+        margin-left: -1em;
+        padding-top: 0;
+        float: left;
+        color: inherit;
+      }
+    }
+
+    &.collapsed {
+      dl, dd, dt, ul, div {
+        display: none;
+      }
+
+      legend {
+        margin: 0;
+      }
+      legend::before {
+        // icon: right-dir
+        content: '\e820';
+      }
+
+      margin-bottom: 0.2em;
+      padding-bottom: 0;
+    }
+  }
+}
+
+#layout.minimal-layout div.content form.gipfl-form {
+  dt, dd {
+    display: block;
+    width: auto;
+  }
+
+  dt label {
+    color: @text-color;
+  }
+
+  fieldset {
+    min-width: unset;
+  }
+
+  input[type=text], input[type=password], textarea, select {
+    max-width: unset;
+    min-width: unset;
+    border-color: @gray-light;
+  }
+
+  dd.active {
+    input[type=text], input[type=password], textarea, select {
+      border-color: @icinga-blue;
+    }
+  }
+
+  fieldset.collapsed {
+    dd, dt, ul, div {
+      display: none;
+    }
+  }
+}
+

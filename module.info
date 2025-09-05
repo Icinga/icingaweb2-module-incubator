@@ -1,5 +1,5 @@
 Name: Incubator
-Version: master
+Version: 0.23.0
 Requires:
   Libraries: icinga-php-library (>=0.13.1), icinga-php-thirdparty (>=0.12.1)
 Description: Incubator provides bleeding-edge libraries
